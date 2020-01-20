@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="caculator.css" />
+  <title>계산기</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+        <td colspan="4">
+            <input type="text" id="display">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <input type="text" id="result">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">AC</td>
+        <td onclick="add('/')">/</td>
+    </tr>
+    <tr>
+        <td onclick="add(7)">7</td>
+        <td onclick="add(8)">8</td>
+        <td onclick="add(9)">9</td>
+        <td onclick="add('*')">*</td>
+    </tr>
+    <tr>
+        <td onclick="add(4)">4</td>
+        <td onclick="add(5)">5</td>
+        <td onclick="add(6)">6</td>
+        <td onclick="add('-')">-</td>
+    </tr>
+    <tr>
+        <td onclick="add(1)">1</td>
+        <td onclick="add(2)">2</td>
+        <td onclick="add(3)">3</td>
+        <td onclick="add('+')">+</td>
+    </tr>
+    <tr>
+        <td colspan="2" onclick="add(0)">0</td>
+        <td onclick="add('.')">.</td>
+        <td onclick="calculate()">=</td>
+    </tr>
+</table>
+
+  <script>
+    var numberClicked= false;
+    function add(char) {
+      if(numberClicked == false){
+        if(isNaN(char) ==true){
+        //아무것도 안함
+      }else{
+        document.getElementById('display').value +=char;
+      }
+    }else{
+      document.getElementById('display').value +=char;
+    }
+      if(isNaN(char)==true){
+        numberClicked = false;
+      }else{
+        numberClicked =true;
+      }
+      // var display = document.getElementById('display');
+      // display.value = display.value + char;
+    }
+
+    function calculate(){
+      var display=document.getElementById('display');
+      var result = eval(display.value);
+      document.getElementById('result').value = result;
+  }
+  function reset(){
+    document.getElementById('display').value="";
+    document.getElementById('result').value="";
+  }
+  </script>
+
+  </html>
+</body>
