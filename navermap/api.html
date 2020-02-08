@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <title>api가져오기 테스트</title>
+    <script
+      type="text/javascript"
+      src="https://openapi.gg.go.kr/MovieTheater?KEY=0306e459f44443f8b99ca1cfc998fbd4
+      "
+    ></script>
+  </head>
+  <body>
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+      var obj = { key1: "data1", key2: "data2", key3: "data3" };
+      console.log(obj);
+      var keys = Object.keys(obj);
+      console.log(keys);
+      for (var i in keys) {
+        console.log("key=" + keys[i] + ", data=" + obj[keys[i]]);
+      }
+    </script>
+  </body>
+</html>
