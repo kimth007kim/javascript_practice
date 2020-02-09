@@ -2,10 +2,17 @@
 <html>
   <head>
     <script>
-      alert("Hello World");
-      var pi; //변수선언
-      pi = 3.14159265;
-      alert(pi);
+      var output = "";
+      for (var i = 0; i < 15; i++) {
+        for (var j = 15; j > i; j--) {
+          output += " ";
+        }
+        for (var k = 0; k < 2 * i - 1; k++) {
+          output += "*";
+        }
+        output += "\n";
+      }
+      alert(output);
     </script>
   </head>
   <body></body>
