@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 카카오 키 -->
+<!-- d18a9850bf6826da55e92c42c640d435 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api따와서 사용해보기</title>
+  </head>
+
+  <body>
+    <h1>이제부터 만들기 시작합니다</h1>
+    <p></p>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: { query: "미움받을 용기" },
+        headers: { Authorization: "KakaoAK d18a9850bf6826da55e92c42c640d435" }
+      }).done(function(msg) {
+        console.log(msg.documents[0].title);
+        console.log(msg.documents[0].thumbnail);
+        $("p").append("<strong>" + msg.documents[0].title + "</strong>");
+        $("p").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+      });
+    </script>
+  </body>
+</html>
