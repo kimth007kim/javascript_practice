@@ -2,17 +2,13 @@
 <html>
   <head>
     <script>
-      var output = "";
-      for (var i = 0; i < 15; i++) {
-        for (var j = 15; j > i; j--) {
-          output += " ";
-        }
-        for (var k = 0; k < 2 * i - 1; k++) {
-          output += "*";
-        }
-        output += "\n";
-      }
-      alert(output);
+      var intervalID = setInterval(function() {
+        alert("<p>" + new Date() + "</p>");
+      }, 1000);
+
+      setTimeout(function() {
+        clearInterval(intervalID);
+      }, 10000);
     </script>
   </head>
   <body></body>
