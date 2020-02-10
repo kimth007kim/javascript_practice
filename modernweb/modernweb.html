@@ -2,13 +2,11 @@
 <html>
   <head>
     <script>
-      var intervalID = setInterval(function() {
-        alert("<p>" + new Date() + "</p>");
-      }, 1000);
+      var willEval = "";
+      willEval += "var number" = "10";
+      willEval += "alert(number);";
 
-      setTimeout(function() {
-        clearInterval(intervalID);
-      }, 10000);
+      eval(willEval);
     </script>
   </head>
   <body></body>
