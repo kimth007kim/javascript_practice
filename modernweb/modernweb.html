@@ -83,9 +83,9 @@
         };
       }
       var output = "이름\t총점\t평균\n";
-      for (var i in students[i]) {
+      for (var i in students) {
         with (students[i]) {
-          output += 이름 + "\t" + getSum() + "\t" + getAverage() + "\n";
+          output += 이름 + `\t` + getSum() + "\t" + getAverage() + "\n";
         }
       }
       alert(output);
