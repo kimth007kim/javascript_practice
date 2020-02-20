@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+/* 레이어팝업 및 일반팝업 */ 
+/*.overlay{position:absolute;top:0;left:0;width:100%;height:100%;_height:1000px;filter:alpha(opacity=70);opacity:0.7;background-color:#000;text-align:center;z-index:10000;}*/
+.ft_layer_popup.english {font-family: Nanum Gothic,sans-serif,"돋움",dotum;}
+.ft_layer_popup{display:none; background-color:#f6f6f4; border:5px solid #333;position:fixed;top:10%;width:624px;left:50%;margin-left:-312px;z-index:20000;text-align:left;}
+.ft_layer_popup .hd{border-bottom:4px solid #333;height:51px !important;background-color:#333 !important;padding-top:0 !important;padding-left:0 !important;margin-bottom:0 !important;}
+.ft_layer_popup .hd .title_area h4{float:none !important;width:auto !important;margin-right:0 !important;background:none !important;color:#f2f0e5;border:1px solid #707070;height:35px !important;padding-top:14px;padding-left:20px;font-family:Nanum Gothic, 나눔고딕, Apple SD Gothic Neo, AppleGothic, 돋움, dotum, Sans-serif;font-size:22px;line-height:22px;letter-spacing:-1px;}
+.ft_layer_popup .hd a.layer_close{display:block;position:absolute;top:17px;right:20px;width:18px;height:18px;background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/btn_close_x.png") no-repeat;overflow:hidden;text-indent:-1000px;}
+
+.ft_layer_popup .bd{position:relative; margin:0 auto; padding:40px 40px 20px 40px; overflow:hidden; background-color:#f6f6f4;}
+.ft_layer_popup .bd h5{margin-top:28px;margin-bottom:8px;font-family:Nanum Gothic, 나눔고딕, Apple SD Gothic Neo, AppleGothic, 돋움, dotum, Sans-serif;font-size:18px;line-height:20px;font-weight:bold;letter-spacing:-1px;}
+.ft_layer_popup .bd span.des span{color:#666;}
+.ft_layer_popup .bd ul.list li{padding-left:10px;margin-bottom:0 !important;padding-bottom:0 !important;border:0 !important;line-height:20px;background:url("/image/popup/k_layer_common.png") no-repeat 0 -84px;color:#666;}
+.ft_layer_popup .bd em{color:#c62424;}
+.ft_layer_popup .bd span.des{line-height:18px;display:block;}
+.ft_layer_popup .bd .wrap_input{display:inline-block; *display:inline; zoom:1; width:100px; height:27px; border:solid 1px #acaba2; padding:0 10px;}
+.ft_layer_popup .bd .wrap_input > input[type="text"]{width:100%; height:100%; vertical-align:middle; background-color:transparent; border:none;}
+.ft_layer_popup .bd p.notice { line-height: 17px; }
+.ie7 .ft_layer_popup .bd .wrap_input > input[type="text"],
+.ie8 .ft_layer_popup .bd .wrap_input > input[type="text"]{height:auto;padding-top:7px;padding-bottom:6px;}
+.ft_layer_popup .bd ul.info{font-size:12px;color:#666; overflow:hidden;}
+.ft_layer_popup .bd ul.info li{margin-top:28px; overflow:hidden;}
+.ft_layer_popup .bd ul.info li .title{clear:both; float:left; width:60px; font-weight:bold; letter-spacing:-1px;}
+.ft_layer_popup .bd ul.info li .text{float:left; padding-left:19px; width:394px; line-height:22px; margin-top:-4px; letter-spacing:-1px; border-left:1px solid #d7d6cf;}
+.ft_layer_popup .bd ul.info li:first-child{margin-top:0px;}
+.ft_layer_popup .bd img{width:100%;margin: 0 0 20px 0;}
+.ft_layer_popup .bd .control_select{width:100%; position:relative;height:27px;line-height:27px;border:solid 1px #aaa;color:#333;vertical-align:middle}
+.ft_layer_popup .bd .control_select select{background:transparent;width:100%;height:100%;}
+.ft_layer_popup .bd div.form_wrap{position:relative;display:inline-block;border:1px solid #acaba2;padding:3px;}
+.ft_layer_popup .bd div.form_wrap label{position:absolute;left:-1000px;visibility:hidden;}
+.ft_layer_popup .bd div.form_wrap select{width:160px;height:21px;line-height:21px;border:none;background-color:transparent;letter-spacing:-1px;}
+.ft_layer_popup .bd div.form_wrap input[type="text"],
+.ft_layer_popup .bd div.form_wrap input[type="password"]{width:60px;height:21px;line-height:21px;border:none;background-color:transparent;}
+
+.ft_layer_popup .ft{text-align:center;padding:30px 40px;background-color:#f6f6f4;}
+.ft_layer_popup .ft a.layer_close{display:inline-block;width:53px;height:30px;background-position:0 -42px;}
+
+.ft_layer_popup .tbl_view_area table thead .typeA1{padding-top:10px;padding-bottom:10px;}
+.ft_layer_popup .tbl_view_area .dot_gray{display:block;float:left;padding:0px; background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_dot_gray.png") no-repeat 0 0;width:8px;height:8px;vertical-align:middle;}
+.ft_layer_popup .tbl_view_area .typeA1 h5{float:left;display:block;padding:0 2px;margin:0px;font-size:16px;}
+.ft_layer_popup .tbl_view_area .typeA1 p{font-weight:normal;padding:0 0 0 20px;overflow:auto;}
+
+.ft_layer_popup a.btn{margin-right:3px;text-decoration:none;color:#fff;letter-spacing:-1px;font-weight:bold;background-color:#333;border-radius:4px;display:inline-block;*display:inline;zoom:1;width:54px;height:29px;vertical-align:middle;}
+.ft_layer_popup a.btn:hover{text-decoration:underline;}
+.ft_layer_popup a.btn span{display:block;margin:2px;width:48px;height:23px;line-height:23px;border:1px solid #595957;border-radius:3px;text-align:center;color:#f2f0e5;}
+.ft_layer_popup a.btn.btn_white{color:#000;}
+.ft_layer_popup a.btn.btn_white span{background-color:#fff;border-color:#fff;color:#000;}
+.ft_layer_popup a.btn.btn_red{color:#fff;background-color:#c62424;width:auto;}
+.ft_layer_popup a.btn.btn_red span{background-color:#c62424;border-color:#d46060;color:#fff;width:auto;padding:0 5px;}
+.ft_layer_popup a.btn.btn_size2{width:85px;}
+.ft_layer_popup a.btn.btn_size2 span{width:79px;}
+.ft_layer_popup a.btn.btn_size3{width:105px;}
+.ft_layer_popup a.btn.btn_size3 span{width:99px;}
+
+.f_style3{font-size:12px;color:#666;}
+
+/* popup_cgv_discount_payment_info */
+.ft_layer_popup.popup_cgv_discount_payment_info{width:554px; margin-left:-277px;}
+
+/* popup_login */
+.ft_layer_popup.popup_login{width:462px; margin-left:-232px;}
+.ft_layer_popup.popup_login .bd{padding-bottom:40px; padding-left:75px; padding-right:75px;}
+.ft_layer_popup.popup_login .bd .setting{position:relative; margin:9px 0 10px 0; overflow:hidden;}
+.ft_layer_popup.popup_login .bd .setting span.txt{display:block;float:left;margin-top:1px;color:#666;}
+.ft_layer_popup.popup_login .bd .setting span.txt em{font-weight:bold;}
+.ft_layer_popup.popup_login .bd .setting a.setting_guide{float:left;margin-left:3px;width:17px;height:17px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_icon_help.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .setting .control_security{float:left;margin-left:10px;}
+.ft_layer_popup.popup_login .bd .setting .control_security a{float:left; width:17px; height:17px;}
+.ft_layer_popup.popup_login .bd .setting .control_security a.security1{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_security_1_off.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .setting .control_security a.security1.on{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_security_1_on.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .setting .control_security a.security2{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_security_2_off.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .setting .control_security a.security2.on{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_security_2_on.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .login_form {position:relative; overflow:hidden;}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap{position:absolute; left:0; padding:8px 10px 8px 40px; width:134px; height:21px; line-height:21px; border:solid 1px #b5b5b5;}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap.id{top:0px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_icon_id.png) no-repeat left center;}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap.password{top:44px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_icon_pw.png) no-repeat left center;}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap input{vertical-align:middle; width:100%; height:100%; background:transparent;}
+.ft_layer_popup.popup_login .bd .login_form button{float:right; width:98px; height:84px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_btn_login.png) no-repeat;}
+.ft_layer_popup.popup_login.english .bd .login_form button{float:right; width:98px; height:84px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_btn_login_en.png) no-repeat;}
+.ft_layer_popup.popup_login .bd .linkbar{margin-top:15px; margin-bottom:18px; height:12px;}
+.ft_layer_popup.popup_login .bd .linkbar a{float:left;padding-left:16px; font-weight: normal; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_split.png) no-repeat 8px center;}
+.ft_layer_popup.popup_login .bd .linkbar a:first-child{padding-left:0px; background:none;}
+
+.ft_layer_popup.popup_reservation_check{width:987px; margin-left:-493px;}
+.ft_layer_popup.popup_reservation_check .bd {overflow:hidden;}
+.ft_layer_popup.popup_reservation_check .bd .article{float:left; overflow:hidden; border-left:solid 1px #bebebd; border-top:solid 2px #bebebd;}
+.ft_layer_popup.popup_reservation_check .bd .article:first-child{border-left:none;}
+.ft_layer_popup.popup_reservation_check .bd .article h5{display:block; height:35px; line-height:38px; margin:0 0; padding:0 0; padding-left:23px; border-bottom:solid 1px #bebebd; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_dot_gray.png) no-repeat 10px center #eeeeec;}
+.ft_layer_popup.popup_reservation_check .bd .article h5 .desc{color:#666; font-size:11px; font-family:Dotum,'돋움'; font-weight:normal; padding-left:19px;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info{width:452px;height:257px;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content{padding:20px 0 40px 0; overflow:hidden;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content .poster{float: left;width: 110px;height: 158px;line-height: 158px;margin-right: 19px;overflow: hidden;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content .poster img{visibility: hidden;width: 100%;vertical-align: middle}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content table{width:323px; border:none; table-layout:fixed;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content table tr{height:24px; line-height:24px;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content table tr th{width:52px;font-weight:normal;text-align:left;}
+.ft_layer_popup.popup_reservation_check .bd .article.reservation_info > .content table tr td{width:271px; font-weight:bold; height:inherit; line-height:inherit; background:none;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info{width:454px;height:257px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table{margin-top:20px; margin-left:20px; width:434px; border:none;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr{height:24px; line-height:24px; vertical-align: top;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr th{width:58px; font-weight:normal;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td{width:376px; height:inherit; line-height:inherit; background:none;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td > .price {line-height:22px; color:#c62424; font-size:16px; font-family:Verdana; font-weight:bold;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row{overflow:hidden;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .title{font-weight:bold;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .content{margin-left:10px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .content > .price{color:#c62424;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .desc{overflow:hidden;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .desc .left{float:left; width:89px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row > .desc .right{float:right; width:287px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author > .title{float:left;width:115px; line-height: 29px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author > .content{width:274px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author > .content .caution{clear:both; float:left; color:#c62424; padding-left: 0px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author > .content .wrap_input{float:left; width:100px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author_safe > .title{float:left;width:115px; line-height: 29px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author_safe > .content{width:274px;}
+.ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author_safe > .content .wrap_input{float:left; width:100px;}
+.ft_layer_popup.popup_reservation_check .bd .article.desc{clear:both; width:907px; height: auto; padding: 15px 0; border-right:none;border-top:solid 1px #bebebd;border-bottom:solid 2px #bebebd; border-left:none; background-color:#eeeeec;}
+.ft_layer_popup.popup_reservation_check .bd .article.desc ul li{display:block; width: 878px; line-height:15px; margin: 0 0 6px 15px; padding-left:7px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_li.png)left 8px no-repeat;}
+.ft_layer_popup.popup_reservation_check .bd .article.desc a.refundNotice {display:block; text-decoration: underline; color: #207cca; margin-top: 10px; margin-left: 15px; }
+.ft_layer_popup.popup_reservation_check .bd .agreement{float:left; width:100%; margin-top:16px; padding-bottom:19px; height:13px; line-height:13px; text-align:center;}
+.ft_layer_popup.popup_reservation_check .bd .agreement .btn_terms{color:#1a92ce; font-weight:bold; margin-left:12px; margin-right:32px;}
+.ft_layer_popup.popup_reservation_check .ft {padding-top:0px;}
+.ft_layer_popup.popup_reservation_check .ft a.reservation  {display: inline-block; *display:inline; zoom:1; position: relative;background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_btn_payment.png") no-repeat 0 0; width:130px; height:45px;}
+.ft_layer_popup.popup_reservation_check .ft a.cancel  {display: inline-block; *display:inline; zoom:1; position: relative; background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_btn_cancel.png") no-repeat 0 0; width:75px; height:45px;}
+.ft_layer_popup.popup_reservation_check.english .bd .article.payment_info table tr td .row > .desc .left{width:104px;}
+.ft_layer_popup.popup_reservation_check.english .bd .article.payment_info table tr td .row.sms_author > .title{width:125px;}
+.ft_layer_popup.popup_reservation_check.english .bd .article.payment_info table tr td .row.sms_author > .content .wrap_input{width:90px;}
+.ft_layer_popup.popup_reservation_check.english .ft a.reservation  {display: inline-block; *display:inline; zoom:1; position: relative;background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_btn_payment_en.png") no-repeat 0 0; width:87px; height:45px;}
+.ft_layer_popup.popup_reservation_check.english .ft a.cancel  {display: inline-block; *display:inline; zoom:1; position: relative; background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_btn_cancel_en.png") no-repeat 0 0; width:85px; height:45px;}
+
+.ft_layer_popup.popup_reservation_delay{width:560px; margin-left:-280px;}
+.ft_layer_popup.popup_reservation_delay .bd .content {text-align:center; padding-top:16px; padding-bottom:20px; color:#333333; font-size: 16px; line-height: 27px;font-weight: bold;letter-spacing: -1px; }
+.ft_layer_popup.popup_reservation_delay .bd .content em {color:#c62424;}
+.ft_layer_popup.popup_reservation_delay .ft {padding-top:0px; padding-bottom:55px; text-align:center;}
+
+.ft_layer_popup.popup_olleh_internet_coupon_register{width:560px; margin-left:-280px;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .bd p{color:#333; font-size:12px; letter-spacing:-1px; line-height:22px;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .bd p em {color:#c62424;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .bd .form {margin-top:12px;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .bd .form label{padding-right:5px; color:#333333; font-size:12px; font-weight:bold;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .bd .form .wrap_input{width:272px;}
+.ft_layer_popup.popup_olleh_internet_coupon_register .ft {padding-top:20px; padding-bottom:20px;}
+
+.ft_layer_popup.popup_moviecollage_passcard_register{top:1%; width:560px; margin-left:-280px;}
+.ft_layer_popup.popup_moviecollage_passcard_register .bd p{color:#333; font-size:12px; letter-spacing:-1px; line-height:22px;}
+.ft_layer_popup.popup_moviecollage_passcard_register .bd p em {color:#c62424;}
+.ft_layer_popup.popup_moviecollage_passcard_register .bd .form {margin-top:12px;}
+.ft_layer_popup.popup_moviecollage_passcard_register .bd .form label{padding-right:5px; color:#333333; font-size:12px; font-weight:bold;}
+.ft_layer_popup.popup_moviecollage_passcard_register .bd .form .wrap_input{width:272px;}
+.ft_layer_popup.popup_moviecollage_passcard_register .ft {padding-top:38px; padding-bottom:33px;}
+
+.ft_layer_popup.popup_hyundaicard_mpoint{width:560px; margin-left:-280px;}
+/*.ft_layer_popup.popup_hyundaicard_mpoint .bd .form h5{margin-bottom:14px; color:#306791;font-size:14px;font-weight:bold;letter-spacing:-1px;height:14px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/h5_bullet.png) no-repeat 0 4px;text-indent:11px;}*/
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_button{position:absolute; top:12px; right:35px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_button a{display:block; float:left; margin-left:5px; padding:0 6px; border-radius:4px; height:21px; line-height:23px; color:#fff; font-size:12px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_button a.gray {background-color:#82898e; border:solid 1px #6a7176;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_button a.brown {background-color:#926f60; border:solid 1px #806052;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_input{overflow: hidden; margin-bottom:20px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_input .wrap_input_text{float:left; width:247px; height:22px; line-height:22px; border:solid 1px #acaba2; padding:2px 2px; margin-right:5px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_input .wrap_input_text input{width:100%;height:100%; border:none; background-color:transparent;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_input a{display:block; float:left; margin-right:5px; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_header{height:18px; border-bottom:solid 1px #c1c1c1; color:#666666; font-size:11px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_header .col{float:left;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_body{width:518px; height:252px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_body .content{padding-top:6px; padding-bottom:6px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_body .row{clear:both; height:24px; line-height:24px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_list .list_body .row .col{float:left; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table{margin-bottom:10px; border:none;width: 100%;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr{height:44px; vertical-align:middle; text-align:left;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr th{width:125px; padding-left:15px; font-weight:normal;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td{height:inherit; line-height:inherit; background:none;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td.colspan2{padding-left:15px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td a{display:inline-block;*display:inline;*zoom:1; margin-right:5px; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .form_wrap{float:left; top:0; margin-right:5px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .divider,
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .password,
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .string{float:left; height:29px; line-height:29px; top:0; margin-left:0px; margin-right:5px; font-weight:bold;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .price{line-height:29px; float:left; color:#9b3d20; font-size:12px; font-family:Verdana;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .won{line-height:29px; float:left; color:#9b3d20; font-size:12px; padding-left:4px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .won.black{color:#333;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .apply_count{float:left; height:29px; line-height:29px; top:0; margin-left:90px; margin-right:5px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_table tr td .apply_count_control{float:left; width:70px; height:29px; line-height:29px; top:0; margin-left:0px; margin-right:5px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_result{clear:both; margin-bottom:55px; padding:12px 20px 0 20px; text-align:right; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_result .title{color:#59656e; font-size:12px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_result .price{padding-left:35px; color:#9b3d20; font-size:12px; font-family:Verdana; font-weight:bold;}
+.ft_layer_popup.popup_hyundaicard_mpoint .bd .form .form_result .won{color:#9b3d20; font-size:12px;}
+.ft_layer_popup.popup_hyundaicard_mpoint .ft {padding-top:46px; padding-bottom:33px;}
+
+.ft_layer_popup.popup_cgv_ticket_register{top:5%; width:560px; margin-left:-280px;}
+.ft_layer_popup.popup_cgv_ticket_register .bd p{color:#333; font-size:12px; letter-spacing:-1px; line-height:22px;}
+.ft_layer_popup.popup_cgv_ticket_register .bd p em {color:#c62424;}
+.ft_layer_popup.popup_cgv_ticket_register .bd .form {margin-top:12px;}
+.ft_layer_popup.popup_cgv_ticket_register .bd .form label{padding-right:5px; color:#333333; font-size:12px; font-weight:bold;}
+.ft_layer_popup.popup_cgv_ticket_register .bd .form .wrap_input{width:272px;}
+.ft_layer_popup.popup_cgv_ticket_register .ft {padding-top:38px; padding-bottom:33px;}
+
+.ft_layer_popup.popup_alert{width:550px; margin-left:-275px;}
+.ft_layer_popup.popup_alert .alert_msg{color:#666; text-align:left; line-height:16px;}
+.ft_layer_popup.popup_alert .alert_msg em{color:#c62424; font-weight:bold;}
+.ft_layer_popup.popup_alert .adultMark { float: left; width: 74px; height: 74px; margin: 5px 18px 15px 0; background: #d42626; vertical-align: middle; display: block; border-radius: 50%; border: 2px solid #a71a1a; }
+.ft_layer_popup.popup_alert .adultMark span { display: block; width: 74px; text-align: center; color: #fff; font-weight: bold; font-size: 1.2em; line-height: 1.3em; margin-top: 17px; }
+
+.ft_layer_popup.popup_cash_receipts{width:554px; margin-left:-277px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table {width:100%; border:none;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr{height:29px; line-height:29px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table th{width:122px; height:29px; font-weight:normal; padding-top:8px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table td{height:29px; font-weight:normal; background-color:transparent; padding-top:8px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr.option th,
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr.option td{padding-top:3px;} 
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr:first-child th,
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr:first-child td{padding-top:0px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table label {margin-right:23px; vertical-align:middle;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table label input[type=radio] {margin-bottom:2px; margin-right:2px; *margin-right:0px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .form_wrap{float:left; top:0; margin-right:5px; padding:3px; height:21px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .form_wrap input{width:100%;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .divider,
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .string{float:left; height:29px; line-height:29px; top:0; margin-left:0px; margin-right:5px; font-weight:bold;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .form_wrap.jumin{width:115px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .form_wrap.phone{width:78px;}
+.ft_layer_popup.popup_cash_receipts .form table.form_table tr td .form_wrap.business{width:78px;}
+
+.ft_layer_popup.popup_samsungcard_paybacksave{width:554px; margin-left:-277px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd{padding:30px 20px 0 20px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd p{letter-spacing: -1px; line-height:20px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section1{height:20px; position:relative; margin-top:23px; margin-bottom:10px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section1 .left{position:absolute; left:0;bottom:0; font-weight:bold;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section1 .right{position:absolute; right:0;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section1 .btn_print{display:block;width:56px;height:20px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/btn_print_small.png) no-repeat;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_text_wrap{height:67px; overflow:hidden; border:solid 1px #b5b5b5;padding:10px 10px; margin-bottom:10px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_text_wrap .agree_text{color:#666666;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_text_wrap .agree_text .content{padding-right:10px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_radiogroup{height:13px; line-height:13px; text-align:right; margin-bottom:19px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_radiogroup label{margin-left:19px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_radiogroup label:first-child{margin-left:0px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .agree_radiogroup label input{margin-right:2px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2{height:118px; border:solid 1px #b5b5b5;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 table{width:100%;margin-top:9px;margin-bottom:11px;border:none;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 table th{padding-left:26px; font-weight:normal;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 table td{color:#9b3d20; background-color:transparent; text-align:right; padding-right:39px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 table td .value{margin-right:2px; font-family:Verdana; letter-spacing:-1px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result{height:42px; line-height:42px; background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div{float:left;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div.col1{margin-left:26px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div.col2{width:80px;text-align:right; color:#9b3d20; font-weight:bold;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div.col2 .value{margin-right:2px; font-family:Verdana; letter-spacing:-1px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div.col3{margin-left:18px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd .section2 .result div input {margin-right:2px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .btn_wrap{margin-bottom:20px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 {padding-top:0px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 ul.info{padding: 17px 20px 24px 20px; font-size:12px;color:#666; overflow:hidden; margin-bottom:30px; border:solid 2px #d7d6cf;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 ul.info li{margin-top:28px; overflow:hidden;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 ul.info li .title{clear:both; float:left; width:60px; font-weight:bold; letter-spacing:-1px;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 ul.info li .text{float:left; padding-left:19px; width:385px; line-height:22px; margin-top:-4px; letter-spacing:-1px; border-left:1px solid #d7d6cf;}
+.ft_layer_popup.popup_samsungcard_paybacksave .bd2 ul.info li:first-child{margin-top:0px;}
+
+
+
+.ft_layer_popup.f_popup{width:564px;}
+.ft_layer_popup .bd{max-height:710px;overflow-y:hidden}
+.ft_layer_popup .bd .bd_txt{line-height:20px;margin-bottom:4px;}
+.ft_layer_popup .bd .btn{text-align:center}
+.ft_layer_popup .bd .btn_pack,
+.ft_layer_popup .bd .btn_pack *{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/btn_pack.gif) no-repeat;}
+.ft_layer_popup .bd .btn_pack.me.type07 *{background-position:right -393px;}
+.ft_layer_popup .bd .bd_txt .f_style2{color:#666;letter-spacing:-1px;padding-bottom:21px;}
+.ft_layer_popup .bd .f_style1{font-family:verdana;font-size:11px;letter-spacing:-1px;}
+.ft_layer_popup .option_agree{text-align: center; margin-top: 10px; color: #333;}
+
+.ft_layer_popup .bd table{border-bottom:1px solid #999;margin-bottom:10px;}
+.ft_layer_popup .bd table thead tr th{text-align:center;font-size:11px;color:#666;height:30px;padding-top:2px;border-top:1px solid #999;border-bottom:1px solid #c1c1c1;background:#eeeeec;font-weight:500;}
+.ft_layer_popup .bd table thead tr th:first-child, .ft_layer_popup .bd table tbody tr td:first-child{text-align:center;}
+.ft_layer_popup .bd table tbody .first_tr td{padding-top:4px;}
+.ft_layer_popup .bd table tbody tr td{text-align:left;height:26px;line-height:26px;background:#eeeeec;}
+.ft_layer_popup .bd table tbody .use td{background:#f6f6f4;}
+#allListConForm .bd table tbody tr td { text-align: center; }
+#allListConForm .bd table tbody tr td.pad { text-align: center; }
+/* .ft_layer_popup .bd table tbody .use td.pad{text-align: left; padding-left: 5px;} */
+.ft_layer_popup .bd table tbody .use .t_use{color:#ba2626;font-weight:600;}
+.ft_layer_popup .bd table tbody tr.placeholder td{color:#666666; background:#f6f6f4; height:264px;}
+.ft_layer_popup .bd table tbody td{max-width:170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.ft_layer_popup .bd .page-box{text-align:center;font-family:verdana;font-size:12px;font-weight:700;}
+.ft_layer_popup .bd .page-box a{display:inline-block;padding:15px 5px 20px;}
+.ft_layer_popup .bd .page-box a.on,
+.ft_layer_popup .bd .page-box a:hover{color:#993333;}
+
+.f_popup .bd .f_coupon{color:#333;font-weight:600;height:29px;line-height:29px;margin:13px 0 20px;}
+.f_popup .bd .f_coupon label{*display:inline-block;padding-top:0px;}
+.f_popup .bd .input_txt.wht{display:inline-block;margin-left:10px;}
+.f_popup .bd ul.btn li{float:left;padding:0 2px;}
+.f_popup .bd ul.btn{width:152px;margin:0 auto;}
+.f_popup .bd .card_num .input_txt{margin-left:0;}
+.f_popup .bd .card_num li{float:left;}
+.f_popup .bd .card_num li label, .card_num li input, .card_num li span{float:left;display:inline-block;}
+.f_popup .bd .card_num li label{margin-right:10px;}
+.f_popup .bd .card_num li .bar{margin:0 2px;}
+.f_popup .bd .card_num .btn_p{margin-left:5px;}
+.f_popup .bd .btn_c{text-align:center;margin-top:20px;}
+
+.ft_layer_popup .bd .sms_bx{margin-top:5px;font-weight:bold;text-align:center}
+.ft_layer_popup .bd .sms_bx label > img{padding:5px 40px 0 0}
+
+
+
+
+.f_popup .bd div.innerCon {margin: 13px 0 20px 0;}
+.f_popup .bd div.innerCon p.inputCon { height: 20px; margin-bottom: 5px; line-height: 30px; height: 30px; margin-bottom: 5px; }
+.f_popup .bd div.innerCon p.inputCon label { margin-right: 15px; }
+.f_popup .bd div.innerCon p.inputCon.cardNum input[type="text"],
+.f_popup .bd div.innerCon p.inputCon.cardNum input[type="password"] { width: 75px; font-weight: bold; text-align: center; }
+.f_popup .bd div.innerCon p.inputCon.cardPw  input 				{ width: 357px; }
+.f_popup .bd div.innerCon p.noticeTxt { height: 20px; margin: 0 0 12px 0; font-weight: bold; letter-spacing: -1px; color: #777; }
+.f_popup .bd div.innerCon div.btn_area { margin: 15px 0 30px 0; text-align: center; }
+
+.f_popup.prepaid_cardList { width: 380px; }
+.f_popup.prepaid_cardList div.cardListCon { width: 100%; height: 295px; overflow-y: auto; }
+.f_popup.prepaid_cardList div.cardListCon p.noList { width: 100%; text-align: center; padding-top: 40%; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon { width: 100%; height: 62px; border-top: 1px solid #ccc; padding: 5px 0px 5px 0; clear: both; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon span { float: left; display: block; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon span.cardImg { width: 99px; height: 62px; border: 1px solid #cacaca; margin-right: 15px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/noimage_prepaidCard.jpg) no-repeat; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon span.CardAmt { width: 170px;height: 32px; font-weight: bold; line-height: 32px; font-size: 17px; text-align: right; border-bottom: 1px solid #ccc;}
+.f_popup.prepaid_cardList div.cardListCon p.listCon span.CardNum { width: 170px;height: 30px; line-height: 30px; text-align: right; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon:last-child { border-bottom: 1px solid #ccc; }
+.f_popup.prepaid_cardList div.cardListCon p.listCon:nth-child(even) { background: #eaeaea; }
+
+
+
+/*guide_popup*/
+/*guide common*/
+.blind_txt {font-size:0px;line-height:0;text-indent:-99999px;}
+.clfix:after{content: ".";display:block;height:0;clear:both;visibility:hidden}
+.popup_guide{position:absolute;width:669px;padding:50px 39px 0;background:#f2f0e5;margin-left:-370px;height: 750px;overflow-y: auto;overflow-x: hidden;} 
+.popup_guide .ft{background-color:#f2f0e5;}
+.popup_guide .guide_hd h4{height:33px;margin:0 0 9px 210px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/hd01.gif) no-repeat;}
+.popup_guide .guide_hd p{height:11px;margin:0 0 16px 213px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/hd02.gif) no-repeat;}
+.popup_guide .ft a.layer_close{position:absolute;top:17px;right:16px;display:block;width:18px;height:18px;overflow:hidden;text-indent:-1000px;
+	background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/close.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step02, .popup_guide .guide_bd .content .guide_step03{display:none;}
+/*tab*/
+.popup_guide .tab_menu{width:670px;margin-bottom:20px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat left 0;}
+.popup_guide .tab_menu > ul{float:left;padding-right:2px;overflow:hidden;height:66px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -40px;}
+.popup_guide .tab_menu > ul > li{float:left;}
+.popup_guide .tab_menu > ul > li > a{display:block;text-align:center;height:66px;margin-left:-2px;margin-right:-2px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -40px;text-decoration:none;}
+.popup_guide .tab_menu > ul > li.first > a{margin-left:0 !important;}
+.popup_guide .tab_menu > ul > li > a > span{padding-left:34px;height:66px;line-height:65px;display:block;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat left 0;}
+.popup_guide .tab_menu > ul > li > a var{line-height:66px;#line-height:65px;height:66px;padding-right:33px;display:block;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -66px;}
+.popup_guide .tab_menu > ul > li > a.on{position:relative;margin-right:-2px;background-position:right -119px;font-weight:bold;}
+.popup_guide .tab_menu > ul > li > a.on > span{background-position:left -131px;}
+.popup_guide .tab_menu > ul > li > a.on var{background-position:right -131px;}
+.popup_guide .tab_menu > ul > li > a var > span{width:159px;height:66px;display:block;}
+.popup_guide .tab_menu > ul > li > a var > .tab1{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab01.png) no-repeat;}
+.popup_guide .tab_menu > ul > li > a var > .tab2{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab02.png) no-repeat;}
+.popup_guide .tab_menu > ul > li > a var > .tab3{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab03.png) no-repeat;}
+.popup_guide .tab_menu > ul > li > a.on var > .tab1{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab01_on.png) no-repeat;}
+.popup_guide .tab_menu > ul > li > a.on var > .tab2{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab02_on.png) no-repeat;}
+.popup_guide .tab_menu > ul > li > a.on var > .tab3{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab03_on.png) no-repeat;}
+/*guide step01*/
+.popup_guide .guide_bd .content .notice{height:15px;padding-bottom:10px;}
+.popup_guide .guide_bd .content .guide_step01 .notice{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/txt01.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn{width:663px;height:480px;position:relative;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/step01_bg.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_btn > p{position:absolute;top:-27px;right:0;}
+.popup_guide .guide_bd .content .guide_btn .question{width:21px;height:19px;display:block;float:left;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/shape01.png) no-repeat;}
+.popup_guide .guide_bd .content .guide_btn .info{padding-top:2px;font:normal 12px dotum;color:#666;display:block;float:left;}
+.popup_guide .guide_bd .content .guide_btn > ul > li{position:absolute;width:30px;height:28px;}
+.popup_guide .guide_bd .content .guide_btn > ul > li.on{z-index:10}
+.popup_guide .guide_bd .content .guide_btn > ul > li > .btnVisInfo{display:block;width:30px;height:28px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/shape02.png) no-repeat;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn01{top:4px;left:20px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn02{top:56px;left:49px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn03{top:235px;left:12px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn04{top:74px;left:189px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn05{top:-2px;left:326px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn06{top:55px;left:413px;}
+.popup_guide .guide_bd .content .guide_step01 .guide_btn > ul > .btn07{top:394px;left:44px;}
+.popup_guide .guide_bd .content .guide_btn > ul > li > .infoBx{display:none;width:158px;margin-top:-8px;margin-left:-47px;}
+.popup_guide .guide_bd .content .guide_btn > ul > li > .infoBx > .top{display:block;height:26px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/top_bg.png) no-repeat;}
+.popup_guide .guide_bd .content .guide_btn > ul > li > .infoBx > .bottom{display:block;height:22px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/bottom_bg.png) no-repeat;}
+.popup_guide .guide_bd .content .guide_btn > ul > li > .infoBx > .middle{line-height:25px;font:bold 12px 'Nanum Gothic';color:#000;padding:0 13px;display:block;background:#fff;border-left:2px solid #333;border-right:2px solid #333;}
+/*guide step02*/
+.popup_guide .guide_bd .content .guide_step02 .notice{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/txt02.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step02 .guide_btn{width:663px;height:480px;position:relative;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/step02_bg.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step02 .guide_btn > ul > .btn01{top:48px;left:369px;}
+.popup_guide .guide_bd .content .guide_step02 .guide_btn > ul > .btn02{top:113px;left:551px;}
+/*guide step03*/
+.popup_guide .guide_bd .content .guide_step03 .notice{background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/txt03.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn{width:663px;height:836px;position:relative;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/step03_bg.gif) no-repeat;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn > ul > .btn01{top:17px;left:20px;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn > ul > .btn02{top:68px;left:20px;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn > ul > .btn03{top:288px;left:20px;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn > ul > .btn04{top:35px;left:500px;}
+.popup_guide .guide_bd .content .guide_step03 .guide_btn > ul > .btn05{top:372px;left:484px;}
+
+.popup_cinedechef{width:649px; height:323px; margin-left:-324px; position:fixed; top:50%; left:50%; z-index:20000;}
+
+/* 20140515 추가  - 영문 로그인, 가입 팝업*/
+.ft_layer_popup.popup_login.english {font-family: Verdana; } 
+.ft_layer_popup.popup_login.english .tab_nav {padding-top: 20px; padding-left: 20px; } 
+.ft_layer_popup.popup_login.english .tab_nav, .tab_nav a{color:#999 ; font-size:14px; }
+.ft_layer_popup.popup_login.english .tab_nav a.selected{color:#000}
+.ft_layer_popup.popup_login.english .tab_nav .tab_nav_txt1,.ft_layer_popup.popup_login.english .tab_nav .tab_nav_txt2 {color:#999; }
+/*.ft_layer_popup.popup_login.english .bd .login_form button {float: right; width: 98px; height: 84px; background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_btn_login_en_new.png) no-repeat; }*/
+.ft_layer_popup.popup_login.english .bd2 .login_form button {width: 110px; height: 34px; background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_btn_signin_en.png) no-repeat; display: block; margin: 0 auto; }
+.ft_layer_popup.popup_login.english .bd2 .login_form input[class^="input"] {border: solid 1px #b5b5b5; height: 28px; line-height: 28px; margin-right: 5px; background: transparent; color: #666; text-indent: 8px; }
+.ft_layer_popup.popup_login.english .bd2 .login_form select {border: solid 1px #b5b5b5; font-size:14px; height: 28px; line-height: 28px; width: 73px; margin-right: 5px; }
+.ft_layer_popup.popup_login.english .bd2 .login_form input.s1 {width: 110px; } 
+.ft_layer_popup.popup_login.english .bd2 .login_form input.s2 {width: 73px; }
+.ft_layer_popup.popup_login .bd {padding-bottom: 40px; padding-left: 75px; padding-right: 75px; }
+.ft_layer_popup.popup_login .bd2 {padding-bottom: 20px; padding-left: 25px; padding-right: 25px; } 
+.ft_layer_popup.popup_login.english .bd2 .non_member_form_table{margin-top: 10px; }
+.ft_layer_popup.popup_login.english .bd2 .non_member_form_table .col_right{width: 130px; height: 22px; text-align: right; padding-right: 10px; padding-bottom: 7px; padding-top: 7px; }
+.ft_layer_popup.popup_login.english .bd2 .txt_agree {font-size:11px; margin-left: 6px; }
+.ft_layer_popup.popup_login.english .bd2 .policy {margin-left: 19px; margin-bottom: 15px; margin-top: 5px; } 
+.ft_layer_popup.popup_login.english .bd2 .btn_policy {text-decoration: underline; color: purple; }
+.ft_layer_popup.popup_login.english .bd2 .select_phone_wrap {width: 75px; height: 30px; overflow: hidden; z-index: 100; position: absolute; display: inline-block; zoom:1; *display: inline; }
+.ft_layer_popup.popup_login.english .bd2 .select_phone {opacity: 0; filter: alpha(opacity=0); width: 75px; height: 30px; -webkit-appearance: none; -moz-appearance: none; display: block; overflow: hidden; font-size: 15px; }
+.ft_layer_popup.popup_login.english .bd2 .select_phone_over {width: 75px; height: 30px; background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_chk_bg_en.png) no-repeat 0 0; overflow: hidden; display: inline-block; zoom:1; *display: inline; color :#666; margin-right: 1px;}
+.ft_layer_popup.popup_login.english .bd2 .select_phone_over span {display: block; width: 65px; padding-left: 10px; line-height: 29px; display: block; overflow: hidden; }
+
+/* 20140515 추가 - 뉴스레터 가입 폼 */
+.pop_newsletter {position:absolute;top:50px;left:-50px;z-index:9999;background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/pop_newsletter_bg.png) no-repeat 0 0; width: 391px; height: 228px; font-family: verdana; margin:0 auto; }
+.pop_newsletter .register_form {padding-top: 35px; padding-left: 25px; } 
+.pop_newsletter .register_form .regiter_form_table .col1{width: 70px; } .pop_newsletter .register_form .btn_grp{width: 248px; margin: 10px auto; }
+.pop_newsletter .register_form .btn_cancle {margin-right: 5px; }
+.pop_newsletter input[type="text"] {border: solid 1px #b5b5b5; height: 28px; line-height: 28px; margin-right: 5px; background: transparent; color: #666; text-indent: 8px; width: 270px; margin:7px 0; }	
+.pop_newsletter .register_form .txt_agree {font-size:11px; margin-left: 6px; }
+.pop_newsletter .register_form .policy {margin-left: 22px; margin-bottom: 15px; margin-top: 5px; } 
+.pop_newsletter .register_form .btn_policy {text-decoration: underline; color: purple; }
+
+/*20140820 추가 로그인 UI변경건*/
+.ft_layer_popup.popup_login .bd .login_form .input_wrap.password {
+width: 212px;
+border: 2px solid #b5b5b5!important;
+padding-bottom: 7px;margin-bottom: 5px;
+}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap.id {
+width: 212px;
+border: 2px solid #b5b5b5;margin-bottom: 5px;
+}
+.ft_layer_popup.popup_login .bd .login_form .input_wrap {
+position: static;
+}    
+ .ft_layer_popup.popup_login .bd .login_form {width: 266px;
+margin: 0 auto;}
+.ft_layer_popup.popup_login .bd .linkbar {margin-top: 11px;font-family: 'NanumBarunGothicBold', 'Nanum Gothic', 'Dotum';margin-left: 3px;}
+.ft_layer_popup.popup_login .bd .linkbar a {padding-left: 21px;background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/login_split.png) no-repeat 11px center;}
+.ft_layer_popup.popup_login .bd .login_form button,
+.ft_layer_popup.popup_login.english .bd .login_form button {
+float: none;
+width: 266px;
+background: #e71a0f;
+color: #f2f0e5;
+height: 42px;line-height: 37px;
+font-weight: bold;font-family: 'NanumBarunGothicBold', 'Nanum Gothic', 'Dotum';
+}
+.ft_layer_popup.popup_login .bd .login_form button span,
+.ft_layer_popup.popup_login.english .bd .login_form button span{
+display: block;
+border: 1px solid #f07469;
+color: #f2f0e5;
+font-size: 15px;
+font-family: 'NanumBarunGothicBold', 'Nanum Gothic', 'Dotum';
+height: 36px;
+line-height: 37px;
+width: 259px;
+margin: 0 auto;
+}
+.ft_layer_popup .bd {
+padding-top: 45px;
+}

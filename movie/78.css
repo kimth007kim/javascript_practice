@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+.tpm_special{/*background-color:#333;*/ margin-bottom:5px;}
+
+.tpm_special .control_select{width:100%; position:relative; height:27px; line-height:27px; border:solid 1px #aaa; color:#333; vertical-align:middle}
+.tpm_special .control_select select{background:transparent; width:100%; height:100%;}
+.ie7 .tpm_special .control_select select,
+.ie8 .tpm_special .control_select select{height:21px;margin-top:3px;}
+
+.tpm_special .special_header{position:relative;height:43px; line-height:43px;overflow:hidden;cursor:pointer; background-color: #333;}
+.tpm_special .special_header .title{float:left; margin-left:15px; color:#fff; font-size:15px; font-weight:bold;}
+.tpm_special .special_header .desc{float:left; margin-left:15px; color:#efd7cd; font-size:12px; padding-top:2px;}
+.tpm_special .special_header a.tpmh_btn{display:block;width:43px;height:43px;position:absolute;top:0;right:4px;overflow:hidden;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/step3_bullets.png) no-repeat 0 -86px;}
+.tpm_special .special_header a.tpmh_btn span{display:block;height:100%;line-height:1.2em;text-indent:-1000px;}
+.tpm_special.opened .special_header a.tpmh_btn{background-position:0 -129px;/*background-image:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/tpmhs_btn2.png);*/}
+
+.tpm_special .special_body{display:block;clear:both; padding:0 2px 2px 2px;}
+.tpm_special.opened .special_body{display:block;}
+.tpm_special .special_body.membership .row .dimmCon {width: 100%;height: 100%;background-color: #FFF;position: absolute;left: 0;z-index: 10;opacity: .5;}
+.tpm_special .special_body.membership .row{overflow:hidden; padding:0 29px 24px 30px; background-color:#f2f0e5; position: relative;}
+.tpm_special .special_body.membership .row > .divider{height:23px; border-top:solid 1px #b9b8b0;}
+.tpm_special .special_body.membership .row.first > .divider{border-top:none;}
+.tpm_special .special_body.membership .row > .title{float:left;padding-left:12px;width:157px;height:29px;line-height:29px;color:#306791;font-size:14px;font-weight:bold;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/step3_bullets.png) no-repeat 0 -253px;letter-spacing:-1px;}
+.tpm_special .special_body.membership .row > .card_no{float:left; width:260px; height:29px; line-height:29px;}
+.tpm_special .special_body.membership .row > .card_no > .title{float:left; width:53px;}
+.tpm_special .special_body.membership .row > .card_no > .wrap_input{position:relative;float:left;width:120px;height:27px;border:solid 1px #acaba2;padding:0 10px;}
+.tpm_special .special_body.membership .row > .card_no > .wrap_input > input[type="text"]{width:100%;height:100%;vertical-align:middle;background-color:transparent;border:none;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle{float:left; margin-left:5px; padding:0 6px; border-radius:4px; height:27px; line-height:27px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle.cancel{background-color:#82898e; border:solid 1px #6a7176;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle span.default{display:inline;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle span.cancel{display:none;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle.cancel span.default{display:none;}
+.tpm_special .special_body.membership .row > .card_no > .btn_toggle.cancel span.cancel{display:inline;}
+.tpm_special .special_body.membership .row.disabled > .card_no > .wrap_input{background-color:#d7d5cd}
+.tpm_special .special_body.membership .row.disabled > .card_no > .btn_toggle{background-color:#767676;border:solid 1px #666}
+.tpm_special .special_body.membership .row.disabled > .card_no > .btn_toggle.cancel span.cancel{display:none}
+.tpm_special .special_body.membership .row > .card_no > .wrap_input > span{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:#fff;opacity:0;filter:alpha(opacity=0);}
+.tpm_special .special_body.membership .row.disabled > .card_no > .wrap_input > span{display:block;}
+
+.tpm_special .special_body.membership .row > .msg 				{ display:none; float:left; width:506px; height:29px; line-height:29px;}
+.tpm_special .special_body.membership .row span.exe 			{ margin: 0 !important; }
+.tpm_special .special_body.membership .row > .hold_ticket 		{ float:left; height:29px; line-height:29px;}
+.tpm_special .special_body.membership .row > .hold_ticket span 	{ width: auto; margin-right: 0 5px;}
+.tpm_special .special_body.membership .row > .hold_ticket span.value { width: auto; margin: 0 3px 0 5px; text-align: right;}
+.tpm_special .special_body.membership .row > .hold_ticket span.value,
+.tpm_special .special_body.membership .row > .hold_ticket span.exe  { font-weight: bold; color:#9b3d20; }
+
+.tpm_special .special_body.membership .row > .use_ticket		{float:right; height:29px; line-height:29px;}
+.tpm_special .special_body.membership .row > .use_ticket span 	{width: auto; /* margin: 0 5px; */}
+.tpm_special .special_body.membership .row > .use_ticket span.value { width: auto; margin: 0 3px 0 5px; text-align: right;}
+
+.tpm_special .special_body.membership .row > .result			{clear:both; float:right; margin-top:10px; padding-top:13px; width:506px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left; text-align: right;}
+.tpm_special .special_body.membership .row > .result span 		{color:#333; width: auto; margin: 0 5px;}
+.tpm_special .special_body.membership .row > .result span.price {color:#9b3d20;font-weight:bold;text-align:right;margin: 0 3px 0 5px;min-width: 30px;display: inline-block;}
+
+.tpm_special .special_body.membership .row.type2 > .card_no             { width: 250px; }
+.tpm_special .special_body.membership .row.type2 > .hold_ticket  		{ width: 144px; }
+.tpm_special .special_body.membership .row.type2 > .hold_ticket .title 	{ width: 90px;}
+.tpm_special .special_body.membership .row.type2 > .msg2 { position: absolute; font-size: 12px; letter-spacing: -1px; line-height: 17px; margin-bottom: 5px; bottom: 0px; left: 35px; }
+.tpm_special .special_body.membership .row.type2 > .use_ticket select.useNum { width: 40px; height: 25px; vertical-align: top; border: 1px solid #ccc; }
+
+
+
+.tpm_special .special_body.membership .row > .contents 								{ width: auto; min-width: 400px; float: left; }
+.tpm_special .special_body.membership .row > .contents > p.title 					{ margin: 10px 0; }
+.tpm_special .special_body.membership .row > .contents 								{ display: block; }
+.tpm_special .special_body.membership .row > .contents span 						{ height: 20px; line-height: 25px; }
+.tpm_special .special_body.membership .row > .contents > .payName 					{ float:left; width:auto; font-size:12px; font-family:Verdana; text-align:left;}
+.tpm_special .special_body.membership .row > .contents > .price 					{ float:left; width:74px; color:#9b3d20; font-size:12px; margin-right: 5px; font-weight:bold; font-family:Verdana; text-align:right;}
+.tpm_special .special_body.membership .row > .contents > .won 						{ float:left; color:#9b3d20; font-size:12px; text-align:right;}
+.tpm_special .special_body.membership .row > .contents > .btnCon 					{ float:left; margin-left:10px; margin-top: -3px; }
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle{ display: block; padding:0 6px; border-radius:4px; height:27px; line-height:27px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle.cancel{background-color:#82898e; border:solid 1px #6a7176;}
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle span.default{display:inline;}
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle span.cancel{display:none;}
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle.cancel span.cancel{display:inline;}
+.tpm_special .special_body.membership .row > .contents > .btnCon > a.btn_toggle.cancel span.default{display:none}
+
+
+
+.tpm_special .special_body.membership .row.cj_vip_officer > .msg{display:block;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .card_no{display:none;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .hold_ticket{display:none;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .use_ticket{display:none;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result{margin-top:0px; padding-top:2px; background:none; text-align:left; height:29px; line-height:29px;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .title{margin-left:0px;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle{float:none;display:inline-block; *display:inline; zoom:1; margin-left:10px; padding:0 6px; border-radius:4px; height:27px; line-height:27px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle.cancel{background-color:#82898e; border:solid 1px #6a7176;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle span.default{display:inline;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle span.cancel{display:none;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle.cancel span.default{display:none;}
+.tpm_special .special_body.membership .row.cj_vip_officer > .result > .btn_toggle.cancel span.cancel{display:inline;}
+.tpm_special .special_body.membership .row.cj_vip_officer.disabled > .result > .btn_toggle{background-color:#767676;border:solid 1px #666}
+.tpm_special .special_body.membership .row.cj_vip_officer.disabled > .result > .btn_toggle span.cancel{display:none;}
+
+.tpm_special .row .body { width: 505px; float:left; }
+.tpm_special .row .body:after { content: ""; display: block; clear: both; }
+.tpm_special .row .body .block  { height:29px; line-height:29px;}
+.tpm_special .row .body .block.avail_count {width:300px;}
+.tpm_special .row .body .block.avail_point {width:200px;}
+.tpm_special .row .body .block > .title{display:block;width:120px;float:left;}
+.tpm_special .row .body .block .value{color:#9b3d20;font-size:12px;font-family:Verdana;font-weight:bold;}
+.tpm_special .row .body .block .ticket_type .type{display:block;width:180px;float:left;}
+.tpm_special .row .body .block .ticket_type .type .title{display:block;width:auto;float:left;line-height:22px;margin-right:10px;}
+.tpm_special .row .body .block .ticket_type .type a{display:block;width:20px;height:20px;float:left;margin-right:2px;border:1px solid #d6d3ce;background-color:#f2f0e5;}
+.tpm_special .row .body .block .ticket_type .type a span{display:block;width:20px;height:20px;line-height:20px;color:#333;font-family:Verdana;font-size:14px;font-weight:bold;text-align:center;}
+.tpm_special .row .body .block .ticket_type .type a.selected{border-color:#000;background-color:#333;}
+.tpm_special .row .body .block .ticket_type .type a.selected span{color:#fff;margin:1px;border:1px solid #5c5c5c;width:16px;height:16px;line-height:16px;}
+.tpm_special .row .body .block .ticket_type .type.disabled, .tpm_special .row .body .block .ticket_type .type a.disabled{display:none;}
+
+.tpm_special .row .body .avail_count, 
+.tpm_special .row .body .avail_point {width:250px;float:left;}
+.tpm_special .row .body .apply_count, 
+.tpm_special .row .body .use_point{clear:both;}
+.tpm_special .row .body .result{clear:both;margin-top:10px;padding-top:13px;width:100%;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left;text-align:right;}
+.tpm_special .row .body .result span{display:inline-block;*display:inline;zoom:1;}
+.tpm_special .row .body .result > .title{width:56px;color:#333;}
+.tpm_special .row .body .result > .price{width:74px;color:#9b3d20;font-size:12px;font-weight:bold;font-family:Verdana;text-align:right;}
+.tpm_special .row .body .result > .won{color:#9b3d20;font-size:12px;text-align:right;}
+
+.tpm_special .row .body > .avail_point{float:left;height:29px;line-height:29px;}
+.tpm_special .row .body > .avail_point > .title{}
+.tpm_special .row .body > .avail_point > .value{color:#9b3d20;font-size:12px;font-family:Verdana;font-weight:bold;}
+.tpm_special .row .body > .apply_count{clear:both;float:left;height:29px;line-height:29px;}
+.tpm_special .row .body > .apply_count > .title{float:left; }
+.tpm_special .row .body > .apply_count > .control{float:left;width:60px;margin-right:5px;}
+.tpm_special .row .body > .apply_count > .unit{margin-right:23px;}
+.tpm_special .row .body > .balance_point{float:left; height:29px;line-height:29px;}
+.tpm_special .row .body > .balance_point > .title{margin-right:9px;}
+.tpm_special .row .body > .balance_point > .value{color:#333;font-size:12px;font-family:Verdana;font-weight:bold;}
+.tpm_special .row .body > .guide{ margin-top:14px; color:#666; line-height:19px; letter-spacing: -.7px;}
+.tpm_special .row .body > .guide .red{color:#c62424;}
+.tpm_special .row .body > .apply_count .control_select{position:relative;}
+.tpm_special .row .body > .apply_count .control_select span{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:#fff;opacity:0;filter:alpha(opacity=0);}

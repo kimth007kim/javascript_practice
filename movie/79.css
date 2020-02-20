@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* Common - Control - select */
+.tpm_wrap .control_select{width:100%;position:relative;height:27px;line-height:27px;border:solid 1px #aaa;color:#333;vertical-align:middle}
+.tpm_wrap .control_select select{background:transparent;width:100%;height:100%;}
+.ie7 .tpm_wrap .control_select,
+.ie8 .tpm_wrap .control_select{height:22px;}
+.ie7 .tpm_wrap .control_select select,
+.ie8 .tpm_wrap .control_select select{height:18px;margin-top:2px;}
+
+/* Common - Guide */
+.tpm_wrap .tpm_body .guide_wrap{height:31px;line-height:31px;color:#666666;font-size:12px;background-color:#f9f8f3;}
+.tpm_wrap .tpm_body .guide_wrap .guide{position:relative;margin:0 auto;width:100%;}
+.tpm_wrap .tpm_body .guide_wrap .guide .guide_text{font-weight:bold;letter-spacing:-1px;font-size:12px;text-align:center;}
+.tpm_wrap .tpm_body .guide_wrap .guide .guide_option{display:none;position:absolute;top:0px;right:0px;padding-left:18px;}
+.tpm_wrap .tpm_body .guide_wrap .guide .guide_option .icon{position:absolute; left:0px; top:8px; width:12px; height:12px; border:solid 1px #c0bfb7;}
+.tpm_wrap .tpm_body .guide_wrap .disabled {opacity:0.25; filter:alpha(opacity=25);}
+
+/* Common - Discount */
+.tpm_wrap .tpm_body a.form_btn 			{ display: inline-block; padding: 0 6px; border-radius: 4px; height: 21px; line-height: 23px; color: #fff; font-size: 12px; margin-left: 10px; }
+.tpm_wrap .tpm_body a.form_btn.brown 	{ background-color: #926f60; border: 1px solid #806052; }
+.tpm_wrap .tpm_body a.form_btn.gray		{ background-color: #82898e; border: 1px solid #6a7176; }
+.tpm_wrap .tpm_body .tpm_discount{position:relative; border-top:1px solid #d7d6cf; overflow:hidden; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line.png) repeat-y 183px top;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list{float:left; width:183px;border-right:1px solid #d7d6cf;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li{position: relative;width: 100%;height:31px;line-height:31px; border-top:1px solid #d7d6cf; background-color:#f2f0e5;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li:first-child{border-top:none;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.hidden{display:none;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.selected{background-color:#fff;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.disabled a{opacity:0.25; filter:alpha(opacity=25);}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.disabled.checked a{opacity:1; filter:alpha(opacity=100);}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.forcedisabled{opacity:0.25; filter:alpha(opacity=25);}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.checked{background-color:#333; background-image:none;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li a{display:block;height:31px;text-decoration:none;padding-left:14px; color:#333;font-size:12px;font-weight:bold;letter-spacing:-1px;
+	background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/step3_bullets.png) no-repeat 170px -171px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.selected a{padding-left:12px;height:27px;line-height:27px;border:solid 2px #000;background-position:168px -200px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.disabled a{/*color:#999;*/}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.forcedisabled a{/*color:#999;*/}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.checked a{color:#fff;background-position:166px -226px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li.selected.checked a{background-position:164px -228px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_list li div.dimmCon { position: absolute; width: 100%; background: #fff; opacity: .7; display: none; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form{float:right; width:556px; min-height:280px; background-color:#f2f0e5;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .nolist{text-align:center; padding-top:150px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form{display:none; position:relative; padding:19px 19px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form.selected {display:block;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form.disabled {display:none;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form.selected.disabled.checked{display:block;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form h5{margin-bottom:14px;color:#306791;font-size:14px;font-weight:bold;letter-spacing:-1px;height:14px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/step3_bullets.png) no-repeat 0 -259px;text-indent:11px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_button{position:absolute;top:12px;right:35px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_button a{display:block;float:left;margin-left:5px;padding:0 6px;border-radius:4px;height:21px;line-height:23px;color:#fff;font-size:12px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_button a.gray{background-color:#82898e;border:solid 1px #6a7176;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_button a.brown{background-color:#926f60;border:solid 1px #806052;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input{overflow: hidden; margin-bottom:20px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input .wrap_input_text{float:left;width:247px;height:22px;line-height:22px;border:solid 1px #acaba2;padding:2px 2px;margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input .wrap_input_text input{width:100%;height:100%;border:none;background-color:transparent;}
+.ie7 .tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input .wrap_input_text input,
+.ie8 .tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input .wrap_input_text input{height:auto;padding-top:5px;padding-bottom:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_input a{display:block; float:left; margin-right:5px; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_submit{width: 150px;overflow: hidden;margin: 20px auto}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_submit a{display:block; float:left; margin-right:5px; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; width: 50px;text-align: center;letter-spacing: 2px;margin-left: 5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_submit a.brown{background-color:#926f60; border:solid 1px #806052;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_submit a.gray{background-color:#82898e; border:solid 1px #6a7176;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_header{height:18px; border-bottom:solid 1px #c1c1c1; color:#666666; font-size:11px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_header .col{float:left;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body{width:518px; min-height:150px; padding: 5px 0;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .content{padding-top:6px; padding-bottom:6px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .row{clear:both; height:24px; line-height:24px; display:block;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .row.disabled{opacity:0.25; filter:alpha(opacity=25);/*text-decoration:line-through; color:#999;*/}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .row .col{float:left; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .message{display:block;width:100%; text-align:center;color:#666;line-height: 150px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_footer { position:relative;width:100%;padding:7px 0;border-top:1px solid #c7c7c7;text-align:center; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_footer button { width:20px;height:20px;line-height:12px;background-color:transparent; font-weight:bold;font-size:11px; margin: 0 1px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_footer button.on,
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_footer button:hover { background-color:#fff;border:1px solid #ccc;border-radius:4px; color:#bd0707; }
+
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table{margin-bottom:10px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr{height:44px; vertical-align:middle; text-align:left;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr th{width:auto; padding-left:15px; padding-right:15px; font-weight:normal; text-align:left;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td.colspan2{padding-left:15px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td a{display:inline-block;*display:inline;*zoom:1; margin-right:5px; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; background-color:#926f60; border:solid 1px #806052;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td a.btn_toggle.cancel{background-color:#6b767d; border:solid 1px #6a7176;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td a.btn_toggle.cancel span.default{display:none}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td a.btn_toggle span.cancel{display:none}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td a.btn_toggle.cancel span.cancel{display:inline;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .form_wrap{float:left; top:0; margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .divider,
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .password,
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .string{float:left; height:29px; line-height:29px; top:0; margin-left:0px; margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .price{line-height:29px; float:left; color:#9b3d20; font-size:12px; font-family:Verdana;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .price.wide{width:65px}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .won{line-height:29px; float:left; color:#9b3d20; font-size:12px; padding-left:4px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .mm{line-height:29px; float:left; color:#9b3d20; font-size:12px; padding: 5px 0;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .useAll{line-height:29px; float:left; color:#9b3d20; font-size:12px; padding-left:20px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .won.black{color:#333;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .apply_count{float:left;height:29px;line-height:29px;top:0;margin-left:90px;margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .apply_count_control{float:left;width:70px;/*height:29px;line-height:29px;*/top:0;margin-left:0px;margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_table tr td .sale_control{float:left;width:169px;/*height:29px;line-height:29px;*/top:0;margin-left:0px;margin-right:5px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_result{clear:both; padding:12px 20px 0 20px; text-align:right; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_result .title{color:#59656e; font-size:12px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_result .price{padding-left:35px; color:#9b3d20; font-size:12px; font-family:Verdana; font-weight:bold;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_result .won{color:#9b3d20; font-size:12px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide{margin-top:51px; border:2px solid #d7d6cf;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl{overflow:hidden; padding-top:14px; padding-bottom:14px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dt{clear:both;float:left;width:59px;padding-left:22px;line-height:2em;color:#333;font-size:12px;font-weight:bold;letter-spacing:-1px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd{float:left;width:410px;padding-left:14px;color:#666;font-size:12px;line-height:2em;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd.split{border-left:solid 1px #d7d6cf;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd .red{color:#c62424;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd p {line-height:20px; margin-top:-3px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd p.type2 {padding-left: 20px; margin-top:0 !important;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd p.type2 span.icon {margin-left: -20px; display: inline-block; width: 20px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table {width: 98%; border: 1px solid #d7d6cf; margin-bottom: 10px; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table th { font-size: 11px; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table thead { text-align: center; background: #e6e6e6; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table thead th { padding: 1px 0; border-left: 1px solid #d7d6cf; border-bottom: 1px solid #d7d6cf; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table tbody { text-align: center; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table tbody th { padding-left: 10px; text-align: left; border-bottom: 1px solid #d7d6cf; font-weight: normal; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide table tbody td { border-left: 1px solid #d7d6cf; border-bottom: 1px solid #d7d6cf; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide small { font-size: 11px; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .formImgCon { margin: 0px 0 10px 0; }
+
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd p small {font-size : 11px; letter-spacing: -1px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide dl dd p small a {letter-spacing: 0px; text-decoration: underline; }
+
+.ie7 .tpm_wrap .tpm_body .tpm_discount .discount_form .form.cjcard_reserve .form_table tr td,
+.ie8 .tpm_wrap .tpm_body .tpm_discount .discount_form .form.cjcard_reserve .form_table tr td{width:370px;}
+.ie7 #lp_homeplus_point, .ie8 #lp_homeplus_point, .ie9 #lp_homeplus_point,
+.ie7 #okcashbag_point_use, .ie8 #okcashbag_point_use, .ie9 #okcashbag_point_use,
+.ie7 #soil_point_point_use, .ie8 #soil_point_point_use, .ie9 #soil_point_point_use,
+.ie7 #samsung_upoint_point_use, .ie8 #samsung_upoint_point_use, .ie9 #samsung_upoint_point_use,
+.ie7 #cjcard_reserve_point_use, .ie8 #cjcard_reserve_point_use, .ie9 #cjcard_reserve_point_use{padding-right:1px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide a.okcashbag_changepw{display:block;width:88px;height:20px;line-height:20px;
+	border:1px solid #666;border-radius:3px;background-color:#f2f0e5;text-decoration:none;color:#666;letter-spacing:-1px;text-align:center;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide a.okcashbag_changepw:hover{text-decoration:underline;}
+
+/* common - input list */
+.tpm_wrap .form.ts3s2_1 .form_list .list_header .col.col1{width:120px; padding-left:15px;}
+.tpm_wrap .form.ts3s2_1 .form_list .list_header .col.col2{width:80px;}
+.tpm_wrap .form.ts3s2_1 .form_list .list_body .row .col1{width:120px; padding-left:15px; font-size:12px;}
+.tpm_wrap .form.ts3s2_1 .form_list .list_body .row .col2{width:80px; font-size:11px; font-family:Verdana;}
+.tpm_wrap .form.ts3s2_1 .form_list .list_body .row .col3{width:80px; font-size:11px; font-family:Verdana;}
+.tpm_wrap .form.ts3s2_1 .form_list .list_body .row .col3 a{display:block;margin-top:2px;width:30px;height:18px;line-height:18px;text-align:center;border:1px solid #666;border-radius:4px;}
+#ticket.english .tpm_wrap .form.ts3s2_1 .form_list .list_body .row .col3 a{display:block;margin-top:2px;width:48px;height:18px;line-height:18px;text-align:center;border:1px solid #666;border-radius:4px;}
+
+.tpm_wrap .form.ts3s2_2 .form_list .list_header .col.col1{width:180px; padding-left:15px;}
+.tpm_wrap .form.ts3s2_2 .form_list .list_header .col.col2{width:80px;}
+.tpm_wrap .form.ts3s2_2 .form_list .list_body .row .col1{width:180px; padding-left:15px; font-size:12px;}
+.tpm_wrap .form.ts3s2_2 .form_list .list_body .row .col2{width:80px; font-size:11px; font-family:Verdana;}
+.tpm_wrap .form.ts3s2_2 .form_list .list_body .row .col3{width:80px; font-size:11px; font-family:Verdana;}
+.tpm_wrap .form.ts3s2_2 .form_list .list_body .row .col3 a{display:block;margin-top:2px;width:30px;height:18px;line-height:18px;text-align:center;border:1px solid #666;border-radius:4px;}
+
+/* ETC COUPON */
+.tpm_wrap .tpm_body .guide_wrap .guide{width:460px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .nolist{padding-top:237px;}
+
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_list .list_body .row .col { display: block; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form_list .col1{width:197px; padding-left:15px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form_list .col2{width:135px; text-align: center;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form_list .col3{width:130px; text-align: center;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form_list .col4{width:auto; float:right!important; padding-right: 15px; }
+.tpm_wrap .tpm_body .tpm_discount .discount_form .form_list .col4 a{
+	display:block;padding:0 3px;width:auto;height:18px;line-height:18px;text-align:center;border:1px solid #666;border-radius:4px;
+}
+
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc{}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc fieldset{display:block}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc label{font-size:12px;margin-right:5px;color:#59656e}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc .blod{font-weight:bold}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[type="text"],.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[type="password"]{width:60px;height:22px;line-height:22px;border:1px solid #acaba2;padding:2px 2px;margin-right:5px;background-color:transparent}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[type="submit"]{padding:0 6px;border-radius:4px;height:27px;line-height:29px;color:#fff;font-size:12px;background-color:#926f60;border:1px solid #806052;cursor:pointer}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form{margin-bottom:20px}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc p{margin-bottom:10px;height:100%;line-height:28px}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form #svc-couponno{width:247px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[name="month"],.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[name="year"],.tpm_wrap .tpm_body .tpm_discount .discount_form .svc form input[name="cardpassword"]{width:36px}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc .svc-result{text-align:right;padding:12px 20px 0 20px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/pattern_line_dot.png) repeat-x top left}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc .svc-result label{margin-right:35px}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc .svc-result .price{color:#9b3d20;font-size:12px;font-family:Verdana;font-weight:bold}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc .svc-result .won{color:#9b3d20;font-size:12px;}
+.tpm_wrap .tpm_body .tpm_discount .discount_form .svc fieldset input[disabled="disabled"]{background-color:#ccc;opacity:0.25; filter:alpha(opacity=25);cursor:default}
+
+
+/* PARTNER POINT */
+.tpm_wrap.partner_point .tpm_body .guide_wrap .guide{width:468px;}
+.tpm_wrap.partner_point .tpm_body .tpm_discount .discount_form .nolist{padding-top:67px;}
+
+/* ETC POINT */
+.tpm_wrap.etc_point .tpm_body .guide_wrap .guide{width:410px;}
+.tpm_wrap.etc_point .tpm_body .tpm_discount .discount_form .nolist{padding-top:150px;}
+
+/* 모두?�용 버튼 공통 */
+.tpm_wrap.etc_point .tpm_body .tpm_discount .discount_form .form .title3{margin-left:15px;font-weight:bold;color:#59656E;line-height:30px;}
+.tpm_wrap.etc_point .tpm_body .tpm_discount .discount_form .form .title3 label{position:absolute;left:-10000px;visibility:hidden;}
+
+
+/****************************** ENGLISH ********************************/
+#ticket.english .tpm_wrap .tpm_body .tpm_discount .discount_form .form .form_guide a.okcashbag_changepw{width:110px;}
+/****************************** ENGLISH ********************************/
+
+#allListConForm{ padding-bottom: 25px; }
+#allListConForm div.bd .page-box { display: none; }
+#allListConForm tbody tr.noList td { height: 260px; }

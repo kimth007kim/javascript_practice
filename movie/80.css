@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.tpm_wrap .tpm_body .divider{color:#7c7b74;font-weight:bold;margin-left:3px;margin-right:4px;position:relative;top:4px;}
+.tpm_wrap .tpm_body .password{color:#333;font-size:18px;font-weight:bold;margin:0 3px;position:relative;top:6px;letter-spacing:4px;}
+.tpm_wrap .tpm_body .password + .divider{margin-left:-3px;}
+.tpm_wrap .tpm_body .string{color:#333;font-weight:bold;margin:0 3px;position:relative;top:4px;}
+.tpm_wrap .tpm_body .string2{color:#333;margin:0 3px;position:relative;top:4px;}
+
+.tpm_wrap.tpm_last_pay .tpm_body{display:block;margin:0;}
+.tpm_wrap.tpm_last_pay .tpm_body > div{background-color:#f2f0e5;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select{position:relative;width:709px;line-height:41px;margin:0 auto;border-bottom:2px solid #d7d6cf;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select > span{position:relative;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select > span > span{display:none;position:absolute;width:25px;height:25px;left:-5px;top:-5px;background-color:#fff;opacity:0;filter:alpha(opacity=0);}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select > span.disabled > span{display:block;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select label{margin-left:3px;margin-right:15px; color:#333; font-size:14px; font-weight:bold;}
+.english .tpm_wrap.tpm_last_pay .tpm_body .payment_select label{margin-right:10px;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select label.disabled{color:#999;}
+.tpm_wrap.tpm_last_pay .promotion_message{position:absolute;top:5px;right:10px;height:30px;line-height:30px;text-align:right;font-size:13px;font-weight:bold;letter-spacing:-1px;padding-left:20px;z-index:10;}
+.englilsh .tpm_wrap.tpm_last_pay .promotion_message{font-size:13px;}
+.tpm_wrap.tpm_last_pay .promotion_message > a{display:block;width:20px;height:30px;position:absolute;left:0;top:0;overflow:hidden;line-height:200px;
+	background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/btn_info.png) no-repeat 0 50%;}
+.tpm_wrap.tpm_last_pay .promotion_message .msg_box{display:block;position:absolute;left:-30px;right:-30px;top:30px;padding-bottom:20px;
+	text-align:center;line-height:1.3em;font-size:12px;font-weight:normal;border:2px solid #636363;background-color:#fff;z-index:10;}
+.english .tpm_wrap.tpm_last_pay .promotion_message .msg_box{padding-left:20px;padding-right:20px;}
+.tpm_wrap.tpm_last_pay .promotion_message .msg_box p{margin-top:10px;margin-left:15px;margin-right:15px;}
+.tpm_wrap.tpm_last_pay .tpm_body .payment_select_guest{display:none;width:709px;height:17px;line-height:17px;margin:0 auto;margin-top:23px; color:#333; font-size:14px; font-weight:bold;}
+.tpm_last_pay .payment_form .form_wrap{float:left; top:0; margin-right:5px;}
+.tpm_last_pay .payment_form .payment_input.disabled .form_bg{background-color:#d7d5cd}
+.tpm_last_pay .payment_form .payment_input .card_default.disabled .form_bg{background-color:#d7d5cd}
+.tpm_last_pay .payment_form tr td .divider,
+.tpm_last_pay .payment_form tr td .password,
+.tpm_last_pay .payment_form tr td .expire_ex,
+.tpm_last_pay .payment_form tr td .string,
+.tpm_last_pay .payment_form tr td .string2{float:left; height:29px; line-height:29px; top:0; margin-left:0px; margin-right:5px;}
+.tpm_last_pay .payment_form,
+.tpm_last_pay .payment_form .payment_input{position:relative;}
+.tpm_last_pay .payment_form .payment_input{display:none;}
+.tpm_last_pay .payment_form h5{display:none;}
+.tpm_last_pay .payment_form.multiple h5{display:block;margin:15px 15px 0;padding-left:15px;height:36px;line-height:36px;background-color:#e6e4d9;color:#333;font-size:14px;font-weight:bold;}
+.tpm_last_pay .payment_form.multiple .payment_card_radio_wrap {display:none;}
+.tpm_last_pay .payment_form .table_wrap{padding:15px;width:auto;padding-top:0;}
+.tpm_last_pay .payment_form #payPhone .table_wrap { padding-top:15px; }
+.tpm_last_pay .payment_form table{border-collapse:collapse;width:100%;border-bottom:1px solid #d6d4ca;min-height:40px;}
+.tpm_last_pay .payment_form #payCredit .table_wrap{width:500px; min-height:210px;}
+/* .tpm_last_pay .payment_form .table_wrap.phone_wrap table{width:710px;} */
+.tpm_last_pay .payment_form thead{display:none;}
+.tpm_last_pay .payment_form tr{border-top:1px solid #d6d4ca;height:40px;}
+.tpm_last_pay .payment_form tr:first-child{border-top:none;}
+.tpm_last_pay .payment_form.multiple table{border-bottom:none;}
+.tpm_last_pay .payment_form th{width:82px;text-align:right;font-weight:normal;padding-right:10px;vertical-align:middle;}
+.tpm_last_pay .payment_form td > div{position:relative;}
+.tpm_last_pay .payment_form .payment_phone tr:first-child{border-top:none;}
+.tpm_last_pay .payment_form .payment_phone table{border-bottom:none;}
+.tpm_last_pay .payment_form .payment_card .use_point{display:none;position:absolute;top:7px;left:170px;}
+.tpm_last_pay .payment_form .payment_card .use_point label{margin-left:5px;color:#c62424;letter-spacing:-1px;}
+.tpm_last_pay .payment_form .payment_card .expire_ex{margin-left:10px; color:#7a7a7a;/*position:absolute;left:160px;top:8px;*/}
+.tpm_last_pay .payment_form .payment_card .use_coporate_card{float:left; line-height:29px; margin-left:10px; /*position:absolute;left:235px;bottom:9px;*/}
+.tpm_last_pay .payment_form .payment_card .use_coporate_card label{margin-left:5px;color:#7a7a7a;}
+.tpm_last_pay .payment_form .payment_card .card_explain{padding:0 15px 5px;}
+.tpm_last_pay .payment_form .payment_card .card_explain li{display:none;margin-bottom:10px;color:#666;letter-spacing:-1px;padding-left:10px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step3/tps_card_explain_bullet.png) no-repeat 3px 6px;}
+.tpm_last_pay .payment_form .payment_card .card_explain li strong{color:#c62424;font-weight:normal;}
+.tpm_last_pay .payment_form .payment_card .banner_wrap{position:absolute;right:15px;top:15px;width:192px;height:200px;line-height:200px;}
+.tpm_last_pay .payment_form .payment_card .banner_wrap a{display:block; height:100%;}
+.tpm_last_pay .payment_form .payment_card .banner_wrap img {visibility: hidden; /*width: 100%;*/width:192px;height:200px; vertical-align: middle;}
+.tpm_last_pay .payment_form .payment_card .payment_card_radio_wrap{padding:15px 15px 0 15px;}
+.tpm_last_pay .payment_form .payment_card .payment_card_radio_wrap td{padding-left: 33px;}
+.tpm_last_pay .payment_form .payment_card .payment_card_radio_wrap label{margin-left:3px; margin-right:15px; color:#333; font-weight:bold;}
+.tpm_last_pay .payment_form .payment_card .payment_card_radio_wrap label.disabled{color:#999;}
+.tpm_last_pay .payment_form .payment_card .card_owner_jumin th .type_coporate {letter-spacing:-1px;}
+
+.tpm_last_pay .payment_form .table_wrap.transfer_wrap{width:450px;padding:35px 15px;margin:0 auto;}
+.tpm_last_pay .transfer_wrap h6{font-size:14px;font-weight:bold;height:30px;}
+.tpm_last_pay .transfer_wrap > div{line-height:1.5em;}
+
+.ticket div.form_wrap{zoom:1;}
+.ticket div.form_wrap.card_type select{width:150px;}
+.ticket div.form_wrap.card_pw input[type="password"]{width:38px;}
+.ticket div.form_wrap.card_date input[type="text"]{width:38px;}
+.ticket div.form_wrap.card_ssn input[type="text"],
+.ticket div.form_wrap.card_ssn input[type="password"]{width:107px;padding-right:1px;}
+.ticket div.form_wrap.pin_no input[type="text"]{width:127px;}
+.ticket div.form_wrap.phone_no1 select{width:74px;}
+.ie7 .ticket div.form_wrap.phone_no1 select,
+.ie8 .ticket div.form_wrap.phone_no1 select{padding-bottom:2px;}
+.ticket div.form_wrap.user_id input[type="text"]{width:120px;}
+.ticket div.form_wrap.user_pw input[type="password"]{width:120px;}
+.ticket div.form_wrap.birthday input[type="text"]{width:100px;}
+.ticket div.form_wrap.coupon input[type="text"]{width:150px;}
+.ticket div.form_wrap.point input[type="text"]{width:60px;}
+.ticket div.form_wrap.corporate input[type="text"]{width:205px;}
+
+.ticket div.form_wrap.clause{display:block;position:relative;width:250px;float:left;}
+.ticket div.form_wrap.clause a{display:block;position:absolute;top:3px;right:25px;color:#c62424;font-size:11px;}
+.ticket.english div.form_wrap.clause a{display:inline;position:static;}
+
+.payment_input .payment_input_exp{position:relative;padding:20px 0;background-color:#ebe9df;color:#666;line-height:1.5em;}
+.payment_input .payment_input_exp > span{display:block;padding-left:28px;}
+.payment_input .payment_input_exp .buttons{position:absolute;top:50%;right:35px;height:1px;}
+.payment_input .payment_input_exp span.alert{color:red;text-align:center;font-weight:bold;padding:0;}
+/*.payment_input .payment_input_exp a{float:right;margin-left:5px;display:block;width:148px;height:25px;line-height:25px;position:relative;top:-14px;border:2px solid #666;border-radius:4px;color:#666;font-weight:bold;letter-spacing:-1px;text-align:center;}*/
+.payment_input .payment_input_exp a {color:#666;text-decoration:underline;}
+.payment_input .payment_input_exp a:hover {text-decoration:underline;}
+.payment_input .payment_input_exp.disabled a{filter:alpha(opacity=50);opacity:0.5;}
+.payment_input.payment_transfer .payment_input_exp > span{display:block;width:450px;margin:0 auto;padding-left:0;}
+.tpm_last_pay .payment_form.multiple .payment_input.payment_phone .payment_input_exp{display:none;}
+
+.tpm_last_pay .payment_form .payment_card .discount_result{margin-top:10px; margin-bottom:14px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference {height:29px; line-height:29px; margin-bottom:14px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference .left{float:left; color:#666; font-size:11px;}
+#ticket.english .tpm_last_pay .payment_form .payment_card .discount_result .result_reference .left{line-height:12px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference .right{float:right;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a{display:block; float:left; padding:0 6px; border-radius:4px; height:27px; line-height:29px; color:#fff; font-size:12px; text-align: center}
+.tpm_last_pay .payment_form .payment_card .card_default.disabled .discount_result .result_reference a{filter:alpha(opacity=50);opacity:0.5;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a.brown{background-color:#926f60; border:solid 1px #806052;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a.btn_toggle.cancel{background-color:#6b767d; border:solid 1px #6a7176;}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a.btn_toggle.cancel span.default{display:none}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a.btn_toggle span.cancel{display:none}
+.tpm_last_pay .payment_form .payment_card .discount_result .result_reference a.btn_toggle.cancel span.cancel{display:inline}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price{height:23px; line-height:23px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price .discount_price_inner{float:right;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price .discount_price_inner .title{float:left; color:#333; font-size:12px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price .discount_price_inner .price{float:left; margin-right:2px; width:76px; color:#9b3d20; font-size:12px; font-weight:bold; font-family:Verdana; text-align:right;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price .discount_price_inner .won{float:left; color:#9b3d20; font-size:12px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price .discount_price_inner .radios{float:left; margin-left:20px; color:#333;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price_plus .discount_price_plus_inner{float:right;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price_plus .discount_price_plus_inner .title{float:left; color:#333; font-size:12px;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price_plus .discount_price_plus_inner .price{float:left; margin-right:2px; width:76px; color:#9b3d20; font-size:12px; font-weight:bold; font-family:Verdana; text-align:right;}
+.tpm_last_pay .payment_form .payment_card .discount_result .discount_price_plus .discount_price_plus_inner .won{float:left; color:#9b3d20; font-size:12px;}
+
+
+
+
+/****************** ENGLISH *************************/
+#ticket.english .tpm_wrap.tpm_last_pay .tpm_body .payment_select label{letter-spacing:-1px;font-size:13px;}
+#ticket.english .tpm_last_pay .payment_form .payment_card .payment_card_radio_wrap label{letter-spacing:-1px;}
+#ticket.english .payment_input .payment_input_exp a{width:120px;}
+/****************** ENGLISH *************************/
