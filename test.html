@@ -6,23 +6,21 @@
     <title>Document</title>
   </head>
   <script>
-    var t = [];
-    t.push({ 지역: "안산", 상영관명: "롯데시네마", 고유번호: 1 });
-    t.push({ 지역: "서울", 상영관명: "cgv", 고유번호: 2 });
-    t.push({ 지역: "인천", 상영관명: "cgv", 고유번호: 3 });
-    t.push({ 지역: "경북", 상영관명: "롯데시네마", 고유번호: 4 });
-    t.push({ 지역: "안양", 상영관명: "메가박스", 고유번호: 5 });
-    t.push({ 지역: "산본", 상영관명: "롯데시네마", 고유번호: 6 });
-    t.push({ 지역: "경남", 상영관명: "cgv", 고유번호: 7 });
-    t.push({ 지역: "전북", 상영관명: "메가박스", 고유번호: 8 });
-    t.push({ 지역: "전남", 상영관명: "롯데시네마", 고유번호: 9 });
-    var output = "";
-    for (var i in t) {
-      with (t[i]) {
-        output += 지역 + " " + 상영관명 + " " + 고유번호 + "\n";
+    function clone(obj) {
+      var output = {};
+      for (var i in obj) {
+        output[i] = obj[i];
       }
+      return output;
     }
-    alert(output);
+
+    var original = { a: 10, b: 20 };
+    var referenced = original;
+    var cloned = clone(original);
+
+    original.a = 20;
+    alert(JSON.stringify(referenced, null, 2));
+    alert(JSON.stringify(cloned, null, 2));
   </script>
   <body></body>
 </html>
