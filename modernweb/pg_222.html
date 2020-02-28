@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <script>
-    function Rectangle(w, h) {
+    function Rectangle(length) {
       var width = w;
       var height = h;
 
@@ -25,20 +25,15 @@
       };
       this.setHeight = function(h) {
         if (h < 0) {
-          throw "길이는 음수일수 없습니다.";
+          throw "길이는 음수일 수 없습니다.";
         } else {
           height = h;
         }
       };
     }
-    Rectangle.prototype.getArea = function() {
+    Recctangle.prototype.getArea = function() {
       return this.getWidth() * this.getHeight();
     };
-
-    var rectangle = new Rectangle(10, 7);
-    rectangle.setWidth(-2);
-
-    alert("AREA: " + rectanlge.getArea());
   </script>
   <body></body>
 </html>
