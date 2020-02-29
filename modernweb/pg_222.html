@@ -34,6 +34,16 @@
     Recctangle.prototype.getArea = function() {
       return this.getWidth() * this.getHeight();
     };
+    function Square(length) {
+      this.base = Rectangle;
+      this.base(length, length);
+    }
+    Square.prototype = Rectangle.prototype;
+    Square.prototype.constructor = Square;
+
+    var rectangle = new Rectangle(5, 7);
+    var square = new Square(5);
+    alert(rectangle.getArea() + " : " + square.getArea());
   </script>
   <body></body>
 </html>
