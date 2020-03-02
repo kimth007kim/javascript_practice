@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    //1단계 일단 만들기 o
+    //2단계 캡슐화
+    //3단계 입력받은값 출력하기
+
+    var input = prompt(st, "");
+    function Product(name, weight, price) {
+      this.이름 = name;
+      this.무게 = weight;
+      this.가격 = price;
+    }
+
+    Product.prototype.getPrice = function() {
+      return (this.무게 * this.가격) / 100;
+    };
+
+    var product = new Product("돼지삼겹살", 100, 1690);
+    function st() {}
+    alert(product.getPrice() + "원입니다.");
+  </script>
+  <body></body>
+</html>

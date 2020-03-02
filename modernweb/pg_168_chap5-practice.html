@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function test(a, b, c) {
+      console.log(a);
+      console.log(a * b);
+      console.log(a * b * c);
+    }
+
+    test(10, 100);
+  </script>
+  <script>
+    var input = prompt(
+      "숫자인지 문자인지 분간해보겠습니다.",
+      "뭐든 입력해 보시죠."
+    );
+    if (isNaN(input)) {
+      alert("숫자가 아닙니다.");
+    } else {
+      alert("숫자 입니다.");
+    }
+  </script>
+  <body></body>
+</html>
