@@ -7,23 +7,29 @@
   </head>
   <script>
     //1단계 일단 만들기 o
-    //2단계 캡슐화
-    //3단계 입력받은값 출력하기
-
-    var input = prompt(st, "");
+    //2단계 캡슐화 o
+    //3단계 입력받은값 출력하기o
+    var output = "";
     function Product(name, weight, price) {
       this.이름 = name;
       this.무게 = weight;
       this.가격 = price;
     }
 
+    var product = new Product("돼지삼겹살", 100, 1690);
+
+    for (var key in product) {
+      output += "*" + key + ": " + product[key] + "\n";
+    }
+
     Product.prototype.getPrice = function() {
-      return (this.무게 * this.가격) / 100;
+      return (input * this.가격) / 100;
     };
 
-    var product = new Product("돼지삼겹살", 100, 1690);
-    function st() {}
+    var input = Number(prompt(output + "몇 그램을 사실래요?", ""));
+
     alert(product.getPrice() + "원입니다.");
   </script>
+
   <body></body>
 </html>
