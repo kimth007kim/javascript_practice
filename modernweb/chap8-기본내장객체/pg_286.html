@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    //학생 정보 배열을 만듭니다.
+    var students = [
+      { 이름: "윤인성", 국어: 87, 수학: 98, 영어: 88, 과학: 85 },
+      /*생략*/
+      { 이름: "서준서", 국어: 45, 수학: 52, 영어: 72, 과학: 78 }
+    ];
+
+    // //과학 성적이 90점 넘는 학생을 필터링합니다.
+    // var filteredA = students.filter(function(item) {
+    //   return item > 90;
+    // });
+    // alert(filteredA);
+
+    // //90점 넘는 학생을 필터링합니다.
+    // var filteredB = students.filter(function(item) {
+    //   return (item.국어 + item.수학 + item.영어 + item.과학) / 4 > 90;
+    // });
+    // alert(filteredB);
+
+    //과학 성적이 90점 넘는 학생을 필터링합니다.
+    var filteredA = students.filter(item => item > 90);
+    alert(filteredA);
+
+    //90점 넘는 학생을 필터링합니다.
+    var filteredB = students.filter(
+      i => (i.국어 + i.수학 + i.영어 + i.과학) / 4 > 90
+    );
+    alert(filteredB);
+  </script>
+  <body></body>
+</html>

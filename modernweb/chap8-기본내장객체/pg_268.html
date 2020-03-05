@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    //변수를 생성합니다.
+    var date = new Date(1991, 11, 9);
+
+    //출력합니다.
+    var output = "";
+
+    output += "*toDateString: " + date.toDateString() + "\n";
+    output += "*toGMTString: " + date.toGMTString() + "\n";
+    output += "*toLocaleDateString: " + date.toLocaleDateString() + "\n";
+    output += "*toLocaleString: " + date.toLocaleString() + "\n";
+    output += "*toString: " + date.toString() + "\n";
+    output += "*toTimeString: " + date.toTimeString() + "\n";
+    output += "*toUTCString: " + date.toUTCString() + "\n";
+
+    alert(output);
+  </script>
+  <body></body>
+</html>

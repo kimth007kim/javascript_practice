@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="underscore.js"></script>
+  <script>
+    //학생 정보 배열을 만듭니다.
+    var students = [
+      { 이름: "윤인성", 국어: 87, 수학: 98, 영어: 88, 과학: 85 },
+      /*생략*/
+      { 이름: "서준서", 국어: 45, 수학: 52, 영어: 72, 과학: 78 }
+    ];
+
+    //과학 성적으로 정렬하고 출력합니다 -sortBy() 메서드
+    var sortByScience = _.sortBy(students, function(item) {
+      return item.과학;
+    }).slice(0, 3);
+    alert(JSON.stringify(sortByScience, null, 2));
+
+    //평균 성적으로 정렬하고 출력합니다 -sortBy() 메서드
+    var sortByAverage = _.sortBy(students, function(item) {
+      return (item.과학 + item.수학 + item.영어 + item.과학) / 4;
+    }).slice(0, 3);
+    alert(JSON.stringify(sortByScience, null, 2));
+
+    //과학 성적이 가장 높은 학생을 추출합니다 -max() 메서드
+    var scienceTop = _.max(students, function(item) {
+      return item.과학;
+    });
+    alert(JSON.stringify(scienceTop, null, 2));
+  </script>
+  <body></body>
+</html>

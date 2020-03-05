@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <script>
+    Array.prototype.remove = function(index) {
+      this.splice(index, 1);
+    };
+    var array = [52, 273, 103, 32, 274, 129];
+
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] > 100) {
+        array.remove(i);
+      }
+    }
+    alert(array);
+  </script> -->
+
+  <script>
+    Array.prototype.remove = function(index) {
+      this.splice(index, 1);
+    };
+    var array = [52, 273, 103, 32, 274, 129];
+
+    for (var i = array.length - 1; i >= 0; i--) {
+      if (array[i] > 100) {
+        array.remove(i);
+      }
+    }
+    alert(array);
+  </script>
+  <body></body>
+</html>

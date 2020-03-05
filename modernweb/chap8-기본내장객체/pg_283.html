@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON.stringify() // JSON.parse</title>
+    <!--JSON.stringify() 자바스크립트 객체를 JSON 문자열로 변환합니다.-->
+    <!--JSON.parse() JSON문자열을 자바스크립트 객체로 변환합니다.-->
+  </head>
+  <!-- <script>
+    //변수를 선언합니다.
+    var object = {
+      name: "윤인성",
+      region: "서울특별시"
+    };
+
+    //출력합니다.
+    alert(JSON.stringify(object));
+  </script> -->
+  <script>
+    //변수를 선언합니다.
+    var object = {
+      name: "윤인성",
+      region: "서울특별시"
+    };
+    var copy = JSON.parse(JSON.stringify(object));
+    //출력합니다.
+    alert(copy.name + " : " + copy.region);
+  </script>
+  <body></body>
+</html>
