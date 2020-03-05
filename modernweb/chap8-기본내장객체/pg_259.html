@@ -6,7 +6,14 @@
     <title>Document</title>
   </head>
   <script>
-    var primitiveNumber = 273;
+    // 변수를 선언하고 정렬합니다.
+    var array = [52, 273, 103, 32];
+    array.sort(function(left, right) {
+      return left - right;
+    });
+
+    //출력합니다.
+    alert(array);
   </script>
   <body></body>
 </html>
