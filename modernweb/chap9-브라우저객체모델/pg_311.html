@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <script>
+    //변수를 선언합니다.
+    var audio = new Audio("함정카드.mp3");
+  </script> -->
+  <!-- <script>
+    var audio = new Audio();
+    audio.src = "함정카드.mp3";
+  </script> -->
+  <script>
+    //변수를 선언합니다.
+    var audio = new Audio("함정카드.mp3");
+  </script>
+  <body>
+    <button onclick="audio.play()">PLAY</button>
+    <button onclick="audio.pause()">PAUSE</button>
+    <input type="number" onchange="audio.currentTime=this.value" />
+    <input type="number" onchange="audio.volume=this.value" />
+  </body>
+</html>

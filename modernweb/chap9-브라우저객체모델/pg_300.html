@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>window 객체</title>
+    <title>Document</title>
   </head>
   <script>
+    //변수를 선언합니다.
+    var child = window.open("", "", "width=300,height=200");
+
     //출력합니다.
-    var output = "";
-    for (var key in window) {
-      output += "*" + key + ": " + window[key] + "\n";
-    }
-    alert(output);
+    child.document.write("<h1>From Parent Window</h1>");
   </script>
   <body></body>
 </html>
