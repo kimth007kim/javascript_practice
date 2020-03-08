@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    window.onload = function() {
+      //변수를 선언합니다.
+      var img = document.createElement("img");
+      img.setAttribute("src", "charlizard.gif");
+      img.setAttribute("width", "500");
+      img.setAttribute("height", "350");
+
+      //setAttribute() 메서드를 사용하지 않으면 불가능합니다.
+      img.setAttribute("data-property", 350);
+
+      //노드를 연결합니다.
+      document.body.appendChild(img);
+    };
+  </script>
+  <body></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    window.onload = function() {
+      //문서 객체를 가져옵니다.
+      var headers = document.getElementsByTagName("h1");
+
+      //   headers[0].innerHTML = "with getElementsByTagName()";
+      //   headers[1].innerHTML = "with getElementsByTagName()";
+      for (var i = 0; i < headers.length; i++) {
+        //문서 객체의 속성을 변경합니다.
+        headers[i].innerHTML = "with getElementsByTagName()";
+      }
+    };
+  </script>
+  <body>
+    <h1>header</h1>
+    <h1>header</h1>
+  </body>
+</html>
