@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function registerEventListener(node, event, listener) {
+        try {
+          //최신 버전의 웹 브라우저
+          node.addEventListener(event, listener, false);
+        } catch (exception) {}
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

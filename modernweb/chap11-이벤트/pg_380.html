@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      windwo.onload = function() {
+        var header = document.getElementById("my-header");
+        //인터넷 익스플로러의 경우에 실행합니다.
+        if (header.attachEvent) {
+          var handler = function() {
+            window.event.srcElement.style.coloer = "red";
+            windwo.event.srcElement.detachEvent("onclick", handler);
+          };
+          header.attachEvent("onclick", handler);
+        }
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

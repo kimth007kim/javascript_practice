@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function registerEventListener(node, event, listener) {
+      if (node.addEventListener) {
+        //파이어폭스, 크롬 , 사파리 ,오페라
+        node.addEventListener(event, listener, false);
+      } else if (node.attachEvent) {
+        //인터넷 익스플로러
+        node.attachEvent("on" + event, listener);
+      }
+    }
+
+    function whenClick(e) {
+      var event = window.event || e;
+      var willAlert = "";
+      willAlert += "clientX: " + event.clientX + "\n";
+      willAlert += "clientY: " + event.clientY + "\n";
+      alert(willAlert);
+    }
+  </script>
+  <body></body>
+</html>
