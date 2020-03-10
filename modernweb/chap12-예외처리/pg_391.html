@@ -9,9 +9,20 @@
         try {
           //최신 버전의 웹 브라우저
           node.addEventListener(event, listener, false);
-        } catch (exception) {}
+        } catch (exception) {
+          //구버전의 인터넷 익스플로러
+          node.attachEvent("on" + event, listener);
+        }
       }
+      window.onload = function() {
+        var header = document.getElementById("header");
+        registerEventListener(header, "click", function() {
+          alert("Click");
+        });
+      };
     </script>
   </head>
-  <body></body>
+  <body>
+    <h1 id="header">Click</h1>
+  </body>
 </html>
