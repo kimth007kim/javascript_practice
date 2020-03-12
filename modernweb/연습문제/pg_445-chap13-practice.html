@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var array = ["고구마", "감자", "배추", "고추"];
+
+      $.each(array, function(index, item) {
+        var output = "";
+        output += "     <h1>" + item + "</h1>";
+        document.body.innerHTML += output;
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

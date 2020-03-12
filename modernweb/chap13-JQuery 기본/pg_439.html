@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+      //   $(document).ready(function() {
+      //     var object = {};
+      //     object.name = "RintIanTta";
+      //     object.gender = "Male";
+      //     object.part = "Second Guitar";
+      //   });
+      $(document).ready(function() {
+        //변수를 선언합니다.
+        var object = { name: "윤인성" };
+        //$.extend()메서드를 사용합니다.
+        $.extend(object, {
+          region: "서울특별시 강서구",
+          part: "세컨드 기타"
+        });
+
+        //출력합니다.
+        var output = "";
+        $.each(object, function(key, item) {
+          output += key + ": " + item + "\n";
+        });
+        alert(output);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

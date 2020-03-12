@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+      function test(options) {
+        //옵션 객체를 초기화합니다.
+        options.valueA = option.valueA || 10;
+        options.valueB = option.valueB || 20;
+        options.valueC = option.valueC || 30;
+
+        alert(options.valueA + ":" + options.valueB + ":" + options.valueC);
+      }
+
+      //함수를 호출합니다.
+      test({
+        valueA: 52,
+        valueC: 273
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("tr:eq(0)")
+          .css("background", "#000000")
+          .css("color", "white");
+        $("tr:nth-child(3n+1)").css("background", "#565656");
+        $("tr:nth-child(3n+2)").css("background", "#A9A9A9");
+        $("tr:nth-child(3n)").css("background", "#F9F9F9");
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>이름</th>
+        <th>타입</th>
+        <th>세대</th>
+        <th>기술</th>
+      </tr>
+      <tr>
+        <th>리자몽</th>
+        <th>불,비행</th>
+        <th>1</th>
+        <th>블래스트번</th>
+      </tr>
+      <tr>
+        <th>거북왕</th>
+        <th>물</th>
+        <th>1</th>
+        <th>하이드로캐논</th>
+      </tr>
+      <tr>
+        <th>이상해꽃</th>
+        <th>풀,독</th>
+        <th>1</th>
+        <th>하드플랜트</th>
+      </tr>
+      <tr>
+        <th>맘모꾸리</th>
+        <th>얼음,땅</th>
+        <th>4</th>
+        <th>얼음뭉치</th>
+      </tr>
+      <tr>
+        <th>보만다</th>
+        <th>비행,드래곤</th>
+        <th>3</th>
+        <th>역린</th>
+      </tr>
+      <tr>
+        <th>마기라스</th>
+        <th>악,바위</th>
+        <th>2</th>
+        <th>깨물어부수기</th>
+      </tr>
+    </table>
+  </body>
+</html>
