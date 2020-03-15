@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>removeClass()</title>
-    <script src="jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
       $(document).ready(function() {
-        $("h1").removeClass("select");
+        $("h1").html(function(index, html) {
+          return "*" + html + "*";
+        });
       });
     </script>
   </head>
   <body>
-    <h1 class="item">Header-0</h1>
-    <h1 class="item select">Header-1</h1>
-    <h1 class="item">Header-2</h1>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
   </body>
 </html>

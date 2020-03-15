@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check inner document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- <script>
+      $(document).ready(function() {
+        //변수를 선언합니다.
+        var html = $("h1").html();
+
+        //출력합니다
+        alert(html);
+      });
+    </script> -->
+    <script>
+      $(document).ready(function() {
+        //변수를 선언합니다.
+        var text = $("h1").text();
+
+        //출력합니다
+        alert(text);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+  </body>
+</html>
