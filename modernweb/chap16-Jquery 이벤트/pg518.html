@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("h1").on("click", function() {
+          var length = $("h1").length;
+          var targetHTML = $(this).html();
+          $("#wrap").append("<h1>" + length + "-" + targetHTML + "</h1>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>Header</h1>
+    </div>
+  </body>
+</html>
