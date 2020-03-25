@@ -14,6 +14,13 @@
 
           //문서 객체에 입력합니다.
           $("h1").html(remain);
+
+          //문서객체의 색상을 변경합니다.
+          if (remain >= 0) {
+            $("h1").css("color", "black");
+          } else {
+            $("h1").css("color", "red");
+          }
         });
       });
     </script>
