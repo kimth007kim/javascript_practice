@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+      //무한 스크롤 부분
+      $(document).ready(function() {
+        //스크롤 이벤트 발생시
+        $(window).scroll(function() {
+          //필요한 변수를 구합니다.
+          var scrollHeight = $(window).scrollTop() + $(window).height();
+          var documentHeight = $(document).height();
+          //스크롤 높이와 문서의 높이가 같을때
+          if (scrollHeight == documentHeight) {
+            for (var i = 0; i < 10; i++) {
+              $("<h1>Infinity Scroll</h1>").appendTo("body");
+            }
+          }
+        });
+      });
+      //테스트를 위해 내부에 공간을 채워둡니다.
+      $(document).ready(function() {
+        for (var i = 0; i < 20; i++) {
+          $("<h1>Infinity Scroll</h1>").appendTo("body");
+        }
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
