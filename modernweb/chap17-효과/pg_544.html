@@ -11,12 +11,22 @@
         background-color: orange;
       }
     </style>
+    <script src="jquery-3.4.1.min.js"></script>
     <script>
       $(document).ready(function() {
         $("div").click(function() {
           //변수를 선언합니다.
           var width = $(this).css("width");
           var height = $(this).css("height");
+
+          //animate() 메서드를 사용합니다.
+          $(this).animate(
+            {
+              width: "+=50",
+              height: "+=50"
+            },
+            "slow"
+          );
         });
       });
     </script>
