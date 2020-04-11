@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+        background: #eee;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="480" height="320"></canvas>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      //   ctx.beginPath();
+      //   ctx.rect(20, 40, 50, 50);
+      //   ctx.fillStyle = "red";
+      //   ctx.fill();
+      //   ctx.closePath();
+      ctx.beginPath();
+      ctx.fillStyle = "rgb(200,0,0)";
+      ctx.fillRect(10, 10, 50, 50);
+    </script>
+  </body>
+</html>

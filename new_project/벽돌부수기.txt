@@ -1,0 +1,12 @@
+canvas 태그:
+HTML의 canvas는 웹페이지에서 그래픽 적인 것을 그릴때 사용된다.
+<canvas id= "test" width="150" height=150"></canvas>
+src속성과alt속성이 없다는 것과 제외하면 <img>와 요소가 비슷.
+canvas는 img와 다르게 닫는태그 </canvas>가 필요
+
+랜더링 컨테스트
+<canvas>요소는 고정된 크기의 드로잉 영역을 생성하며, 그 영역은 보여질 컨텐츠를
+생성하고 다루게될 두가지 이상의 렌더링 컨텍스트를 노출시킨다 (2d,3d)
+
+getContext()메소드의 존재여부를 활용하여 지원하지 않는 브라우저에 대한 처리를 할수있다.
+var ctx=canvas.getContext("2d");
