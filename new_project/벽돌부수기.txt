@@ -8,5 +8,22 @@ canvas는 img와 다르게 닫는태그 </canvas>가 필요
 <canvas>요소는 고정된 크기의 드로잉 영역을 생성하며, 그 영역은 보여질 컨텐츠를
 생성하고 다루게될 두가지 이상의 렌더링 컨텍스트를 노출시킨다 (2d,3d)
 
+
+HTMLCanvasElement.getContext()메소드는 캔버스의 드롱잉 컨텍스트를 반환합니다. 컨텍스트 식별자가 지원되지않을 경우 null을 반환
 getContext()메소드의 존재여부를 활용하여 지원하지 않는 브라우저에 대한 처리를 할수있다.
-var ctx=canvas.getContext("2d");
+
+var ctx=canvas.getContext(contextType);
+
+contextType: 캔버스에 연관된 드로잉 컨텍스트를 정의하는 컨텍스트 식별자를 갖는 DOMString(UTF-16문자열) 입니다.
+-"2d"를 입력하면 2차원 렌더링 컨텍스트를 나타내는 CanvasRenderingContext2D객체가 생성
+
+EventTarget.addEventListener란?
+
+addEventListener()메서드는 지정한 이벤트가 대상에 전달될때마다 호출할 함수를 설정합니다.
+매개변수
+target.addEventListener(type,listener[,useCapture]);
+
+type:이벤트의 유형
+listener 지정한 타입의 이벤트가 발생했을떄, 알림을 받는 객체입니다.
+useCapture: DOM트히의 하단에 있는 EventTarget으로 전송하기전에  등록된 listener로 이타입의 이벤트의 전송여부를 나타내는 Boolean이다.
+기본값은 flase이다. 
