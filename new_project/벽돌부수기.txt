@@ -27,3 +27,6 @@ type:이벤트의 유형
 listener 지정한 타입의 이벤트가 발생했을떄, 알림을 받는 객체입니다.
 useCapture: DOM트히의 하단에 있는 EventTarget으로 전송하기전에  등록된 listener로 이타입의 이벤트의 전송여부를 나타내는 Boolean이다.
 기본값은 flase이다. 
+
+var x=e.clientX; // 변수x에 현재 마우스 X값을담는다.
+var y=e.clientY; // 변수y에 현재 마우스 Y값을 담는디ㅏ. 
