@@ -28,5 +28,20 @@ listener 지정한 타입의 이벤트가 발생했을떄, 알림을 받는 객�
 useCapture: DOM트히의 하단에 있는 EventTarget으로 전송하기전에  등록된 listener로 이타입의 이벤트의 전송여부를 나타내는 Boolean이다.
 기본값은 flase이다. 
 
+마우스리스너
 var x=e.clientX; // 변수x에 현재 마우스 X값을담는다.
-var y=e.clientY; // 변수y에 현재 마우스 Y값을 담는디ㅏ. 
+var y=e.clientY; // 변수y에 현재 마우스 Y값을 담는다.
+
+canvas.offsetLeft 란?
+canvas.offsetLeft:캔버스가 시작되는 x값 좌측의 여백을 의미한다.
+-html태그 안에서 좌->우 로 이동한값.
+canvas.offsetTop:캔버스 밖 여백 세로를 의미한다.
+-html태그 안에서 위->아래 로 이동한값
+
+해석해보기
+function mouseMoveHandler(e) {
+        var relativeX = e.clientX - canvas.offsetLeft;	// relative = 마우스x값-캔버스시작되는 x값 좌측 여백
+        if (relativeX > 0 && relativeX < canvas.width) {	//
+          paddleX = relativeX - paddleWidth / 2;
+        }
+      }
