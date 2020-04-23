@@ -1,0 +1,43 @@
+offset: 캔버스 부분과 관련이 있는 값이다.
+
+-offsetX, offsetY
+위 메서드는 이벤트 대상이 기준이 됩니다. ( 화면 중간에 있는 박스 내부에서 클릭한 위치를 찾을 때 해당 박스의 왼쪽 모서리 좌표가 0이됩니다. 화면의 기준이 아닙니다)
+전체 문서를 기준으로 합니다(스크롤 화면 포함)
+
+offsetX : 이벤트 대상 객체에서의 상대적 마우스 x좌표 위치를 반환합니다.
+
+offsetY : 이벤트 대상 객체에서의 상대적 마우스 y좌표 위치를 반환합니다.
+
+clientX,Y는 이 윈도우 전체 범위내에서 마우스의 위치값을 나타낸다.
+
+var, let, const의 차이점
+
+var:변수를 한번 선언하고 또 선언하면 에러가 나오지 않고 각기 다른값이 출력
+	유연한 변수 선언으로 간단한 테스트에 편리함
+	단점: 1. 코드량이 많아지면 어디서 사용될지 파악힘듬
+	        2. 값이 바뀔 우려가 있다.
+
+let: 변수의 재선언은 불가능하지만 재 할당(값을 다시준다)는 가능하다.
+ex) let name = 'bathingape'
+    console.log(name) // bathingape
+
+    let name = 'javascript'
+    console.log(name) 
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+    name = 'react'
+    console.log(name) //react
+
+const:변수 재선언, 변수 재할당 모두 불가능하다.
+    const name = 'bathingape'
+    console.log(name) // bathingape
+
+    const name = 'javascript'
+    console.log(name) 
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+    name = 'react'
+    console.log(name) 
+    //Uncaught TypeError: Assignment to constant variable.
+
+그러므로 테스트할때는 var을 사용하고 변수를 재할당할때는 let을 주자 그리고 상수를 선언할떄는 const를주자.

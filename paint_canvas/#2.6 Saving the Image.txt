@@ -1,0 +1,20 @@
+*event.preventDefault();
+1)개요
+이벤트를 취소 할수 있는 경우,이벤트의 전파를 막지 않고 그 이벤트를 취소한다.
+2)주의
+이벤트를 취소하는 도중에 preventDefault를 호출하게 되면, 일반적으로 브라우저의 구현에 의해
+처리되는 기존의 액션이 동작하지 않게되고, 그 결과 이벤트가 발생하지 않게 됩니다.
+
+*HTMLCanvasElement.toDataURL()
+1)개요
+HTMLCanvasElement.toDataURL()는  나타내는 이미지의 특정한  포맷 담고있는 dataURI를 리턴한다.
+(기본값은 PNG이다)
+
+2)구문
+canvas.toDataURL(type, encoderOptions);
+인자 
+-type
+이미지의 포맷을 가리킨다. 기본값은 image/png이다.
+
+
+                                     
