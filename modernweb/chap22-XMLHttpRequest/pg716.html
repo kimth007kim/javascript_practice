@@ -10,9 +10,11 @@
     <script>
         var request = new XMLHttpRequest();
         request.onreadystatechange=function(event){
-            alert(request.readyState);
+            if(request.readyState==4){
+                document.body.innerHTML+=request.responseText;
+            }
         }
-        request.open('GET','/data.html',true);
+        request.open('GET','data.html',true);
         request.send();
     </script>
 </body>
