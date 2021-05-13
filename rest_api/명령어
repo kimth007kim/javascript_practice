@@ -1,0 +1,23 @@
+curl --location --request POST http://127.0.0.1:3000/user \
+-H "Content-Type: application/json" \
+--data-raw'{
+    "loginid":hello",
+    "password":"world",
+    "nickname":handstudio"
+}'
+
+{"success":true}
+
+
+curl --location --request POST http://127.0.0.1:3000/login \
+-H "Content-Type: application/json" \
+--data-raw'{
+    "loginid":hello",
+    "password":"world",
+}'
+
+{"success":true, "token":"123456"}
+
+curl --location --request GET http://127.0.0.1:3000/user=?token=123456 \
+
+{"loginid":"hello", "nickname":"handstudio"}
