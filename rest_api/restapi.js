@@ -1,27 +1,49 @@
-const { response } = require("express");
-var express = require("express");
+const express = require("express");
+const jwt = require("jsonwebtoken");
+const mysql = require("mysql");
+var bodyParser = require("body-parser");
+
+var client = mysql.createConnection({
+  user: "root",
+  password: "1234",
+  database: "rest_api_test",
+  multipleStatements: true,
+});
 
 var app = express();
+app.use(express.json());
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  req.send("Hello world!");
-});
+var jsonParser = bodyParser.json();
 
 app.get("/users", (req, res) => {
   return res.json(users);
 });
-app.post("/user", (req, res) => {
-  id = req.loginid;
-  password = req.password;
-  nickname = req.nickname;
-  try {
-    const {};
-  } catch (error) {
-    console.log(err);
-    response(res, 500, "서버에러");
-  }
-  return true;
+
+app.post("/users", (req, res, next) => {
+  // const name = req.body.name;
+  const user = {
+    loginid: req.body.loginid,
+    password: req.body.password,
+    nickname: req.body.nickname,
+  };
+  var params = [req.body.loginid, req.body.password, req.body.nickname];
+  var sql = "Insert into users (loginid,password,nickname) VALUES (?,?,?) ";
+  client.query(sql, params, function (err, rows, fields) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(rows);
+    }
+  });
+  res.json(user);
 });
+
 app.listen(3000, () => {
   console.log("http://127.0.0.1:3000");
 });

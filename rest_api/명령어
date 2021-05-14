@@ -21,3 +21,11 @@ curl --location --request POST http://127.0.0.1:3000/login \
 curl --location --request GET http://127.0.0.1:3000/user=?token=123456 \
 
 {"loginid":"hello", "nickname":"handstudio"}
+
+
+
+{
+    "loginid":kim
+    "password":123
+    "nickname":hero
+} 
