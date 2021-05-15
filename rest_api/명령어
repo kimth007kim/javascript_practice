@@ -25,7 +25,7 @@ curl --location --request GET http://127.0.0.1:3000/user=?token=123456 \
 
 
 {
-    "loginid":kim
-    "password":123
-    "nickname":hero
+    "loginid":"kim",
+    "password":"123",
+    "nickname":"hero"
 } 
