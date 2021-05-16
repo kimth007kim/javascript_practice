@@ -18,7 +18,7 @@ curl --location --request POST http://127.0.0.1:3000/login \
 
 {"success":true, "token":"123456"}
 
-curl --location --request GET http://127.0.0.1:3000/user=?token=123456 \
+curl --location --request GET http://127.0.0.1:3000/user?token=123456 \
 
 {"loginid":"hello", "nickname":"handstudio"}
 
@@ -29,3 +29,6 @@ curl --location --request GET http://127.0.0.1:3000/user=?token=123456 \
     "password":"123",
     "nickname":"hero"
 } 
+
+
+http://127.0.0.1:3000/user?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjp7fSwibG9naW5pZCI6ImtpbSIsIm5pY2tuYW1lIjoiaGVybyIsImlhdCI6MTYyMTE1NTgwNn0.hgS27HYR1Ke4hDVNmYHhiNvjUEYRP0gkJYwkIJj1TqU

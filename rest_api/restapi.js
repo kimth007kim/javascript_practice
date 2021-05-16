@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const mysql = require("mysql");
 const tokenizer = require("./tokenizer");
 
+const secret = "secret";
 // var tokenKey = "TEST_KEY11"; //토큰키 서버에서 보관 중요
 // var token =
 //   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjE0NTU0LCJpYXQiOjE0MzUxMzA4NzMsImV4cCI6MTQzNTIxNzI3M30.EWNUjnktCWxlqAAZW2bb0KCj5ftVjpDBocgv2OiypqM";
@@ -25,10 +26,25 @@ app.use(
 );
 app.use(bodyParser.json());
 
-var jsonParser = bodyParser.json();
-
 app.get("/users", (req, res) => {
   return res.json(users);
+});
+app.get("/user", (req, res) => {
+  var token = req.query.token;
+  try {
+    req.decoded = jwt.verify(token, secret);
+    res.status(200).json({
+      loginid: req.decoded.loginid,
+      nickname: req.decoded.nickname,
+    });
+  } catch (err) {
+    if (err.name == "JsonWebTokenError") {
+      return res.status(401).json({
+        code: 401,
+        message: "유효하지않은 토큰",
+      });
+    }
+  }
 });
 
 app.post("/users", (req, res, next) => {
@@ -64,37 +80,29 @@ app.post("/login", (req, res) => {
   const loginid = req.body.loginid;
   const password = req.body.password;
 
-  var sql = "SELECT * FROM users where loginid=?";
-  client.query(sql, [loginid], (err, results) => {
+  var sql = "SELECT * FROM users where loginid=? and password=?";
+  client.query(sql, [loginid, password], (err, results) => {
     if (err) {
       console.log(err);
     }
     if (!results[0]) {
-      return res.send("아이디를 확인해봐요");
+      return res.send("일치하지 않는 정보입니다.");
     }
-    var user = results[0];
-    const hash = crypto.createHmac("sha256", secret);
-    return res.send(user.loginid);
+    token = jwt.sign(
+      {
+        type: jwt,
+        loginid: loginid,
+        nickname: results[0].nickname,
+      },
+      secret
+    );
+    return res.status(200).json({
+      success: true,
+      token: token,
+    });
   });
 });
 
 app.listen(3000, () => {
   console.log("http://127.0.0.1:3000");
 });
-
-let users = [
-  {
-    id: 1,
-    name: "Hyun",
-  },
-  {
-    id: 2,
-    name: "Kim",
-  },
-  {
-    id: 3,
-    name: "Lee",
-  },
-];
-
-// curl -X GET 'http://127.0.0.1:3000/'
